@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Carousel -->
+    <link rel="stylesheet" href="../assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="../assets/css/product/css/productmenu.css">
+    <link rel="stylesheet" href="../assets/css/menu/menu.css">
+    <link rel="stylesheet" href="../assets/css/home/home.css">
+    <link rel="stylesheet" href="../assets/css/shopcart/shopcart.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/libary.css">
+    <link rel="stylesheet" href="../assets/css/bill/bill.css">
+
+</head>
+
+<body>
+    <div id="page" class="c-home_page">
+        <header>
+            <div class="header header_home ">
+                <div class="container">
+                    <div class="main_header">
+                        <div class="logo">
+                            <a href="./index.html" title="SIXDO BY DO MANH CUONG">
+                                <img src="../images/logo.png" alt="SIXDO BY DO MANH CUONG"
+                                    class="img-responsive c-img_logo">
+                            </a>
+                        </div>
+                        <div class="menu_header">
+                            <div class="menu_login">
+                                <a href="javascript:void(0)" title="login" id="c-call_account"
+                                    class="c-account hidden-xs hidden-sm" onclick="$('#memLog').trigger('click')">
+                                    <img src="../images/account.png" alt="login" class="img-responsive">
+                                    login </a>
+                                <div class="c-lang c-item_child search_ c-box_search hidden-sm hidden-xs"
+                                    style="text-transform: unset;">
+                                    <a href="javacript:void(0)" title="Tìm kiếm" class="c-call_search">
+                                        <i class="fa fa-search"></i>
+                                        <span class="hidden-sm hidden-xs">Tìm kiếm</span>
+                                    </a>
+                                    <!--  -->
+                                    <div class="search-box ">
+                                        <form id="form_search" class="form_search" name="form_search" method="post"
+                                            onsubmit="">
+                                            <input class="form-control input_search" type="text" id="keyword"
+                                                name="keyword" value="Gõ từ khóa tìm kiếm">
+                                            <a class="bt-search-main" id="bt-search" onclick="submit_form_search();"> <i
+                                                    class="fa fa-search"></i></a>
+                                            <input type="hidden" id="link_search" name="link_search"
+                                                value="https://sixdo.vn/tim-kiem">
+                                        </form>
+                                    </div>
+                                </div>
+                                <a class="c-lang hidden-xs hidden-sm  active" href="https://sixdo.vn" title="VN" 1="">
+                                    VN </a>
+                                <a class="c-lang hidden-xs hidden-sm " href="https://sixdo.com" title="EN"
+                                    target="_blank">
+                                    EN </a>
+                                <div class="sb-toggle hidden-lg hidden-md  " id="call_menu">
+                                    <div class="navicon-line"></div>
+                                    <div class="navicon-line"></div>
+                                    <div class="navicon-line"></div>
+                                </div>
+                                <a href="https://sixdo.vn/gio-hang" title="Giỏ hàng" class="c-lang c-btn_cart c-btn ">
+                                    <i class="fa fa-shopping-cart hidden-xs hidden-sm"></i>
+                                    <span class="c-amount_cart hidden-xs hidden-sm" style="font-size: 12px">
+                                    </span>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                        class="bi bi-cart4 hidden-lg hidden-md" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#fff" fill-rule="evenodd"
+                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
+                                        </path>
+                                    </svg>
+
+                                    <div class="c-alert_addCart hide"></div>
+                                </a>
+
+                                <div class="c-modal_overlay"></div>
+                                <div class="submenu view-cart-hea c-box_viewCart c-view_prd">
+                                    <a href="" title="close" class="c-close_cart">
+                                        x
+                                    </a>
+                                    <div class="c-box_shopping--cart">
+                                        <p><strong>GIỎ HÀNG</strong></p>
+                                        <div class="c-calc_bag">
+                                            <div class="c-list_item">
+                                                <div class="c-box_item clearfix key_item--1">
+                                                    <div class="row c-item ">
+                                                        <div class="title-cart col-md-3 col-sm-4  c-col-image"><a
+                                                                href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
+                                                                title="Dark Purple Floral Raw Vest"><img
+                                                                    src="https://sixdo.vn/images/products/2023/small/0b2a9556-copy-1697601907.jpg"
+                                                                    class="img-responsive">.</a></div>
+                                                        <div class="col-md-9 col-sm-8 c-col-name name-pro">
+                                                            <div class="c-box_name"><a
+                                                                    href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
+                                                                    title="Dark Purple Floral Raw Vest"
+                                                                    class="c-name">Dark Purple Floral Raw Vest</a><a
+                                                                    data-id="5673-176-1-0-0" data-tr="key_item--1"
+                                                                    class="c-del_incart pull-right"
+                                                                    href="javascript:void(0)" title="">x</a></div>
+                                                            <div class="c-sec_option select-color"><label
+                                                                    class="c-label">Màu: </label>Màu tím đậm</div>
+                                                            <div class="c-sec_option select-size"><label
+                                                                    class="c-label">Size: </label>.S</div>
+                                                            <div class="c-sec_option select-box"><label
+                                                                    class="c-label">Số lượng</label><span
+                                                                    class="custom-quantity-input">1</span><span
+                                                                    class="total-pro pull-right">2.496.000 VND</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="c-box_item clearfix key_item--2">
+                                                    <div class="row c-item ">
+                                                        <div class="title-cart col-md-3 col-sm-4  c-col-image"><a
+                                                                href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
+                                                                title="Dark Purple Floral Raw Vest"><img
+                                                                    src="https://sixdo.vn/images/products/2023/small/0b2a9556-copy-1697601907.jpg"
+                                                                    class="img-responsive">.</a></div>
+                                                        <div class="col-md-9 col-sm-8 c-col-name name-pro">
+                                                            <div class="c-box_name"><a
+                                                                    href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
+                                                                    title="Dark Purple Floral Raw Vest"
+                                                                    class="c-name">Dark Purple Floral Raw Vest</a><a
+                                                                    data-id="5673-176-2-0-0" data-tr="key_item--2"
+                                                                    class="c-del_incart pull-right"
+                                                                    href="javascript:void(0)" title="">x</a></div>
+                                                            <div class="c-sec_option select-color"><label
+                                                                    class="c-label">Màu: </label>Màu tím đậm</div>
+                                                            <div class="c-sec_option select-size"><label
+                                                                    class="c-label">Size: </label>.M</div>
+                                                            <div class="c-sec_option select-box"><label
+                                                                    class="c-label">Số lượng</label><span
+                                                                    class="custom-quantity-input">1</span><span
+                                                                    class="total-pro pull-right">2.496.000 VND</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="c-box_item clearfix key_item--3">
+                                                    <div class="row c-item ">
+                                                        <div class="title-cart col-md-3 col-sm-4  c-col-image"><a
+                                                                href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
+                                                                title="Dark Purple Floral Raw Vest"><img
+                                                                    src="https://sixdo.vn/images/products/2023/small/0b2a9556-copy-1697601907.jpg"
+                                                                    class="img-responsive">.</a></div>
+                                                        <div class="col-md-9 col-sm-8 c-col-name name-pro">
+                                                            <div class="c-box_name"><a
+                                                                    href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
+                                                                    title="Dark Purple Floral Raw Vest"
+                                                                    class="c-name">Dark Purple Floral Raw Vest</a><a
+                                                                    data-id="5673-176-3-0-0" data-tr="key_item--3"
+                                                                    class="c-del_incart pull-right"
+                                                                    href="javascript:void(0)" title="">x</a></div>
+                                                            <div class="c-sec_option select-color"><label
+                                                                    class="c-label">Màu: </label>Màu tím đậm</div>
+                                                            <div class="c-sec_option select-size"><label
+                                                                    class="c-label">Size: </label>.L</div>
+                                                            <div class="c-sec_option select-box"><label
+                                                                    class="c-label">Số lượng</label><span
+                                                                    class="custom-quantity-input">1</span><span
+                                                                    class="total-pro pull-right">2.496.000 VND</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="c-box_item clearfix key_item--4">
+                                                    <div class="row c-item ">
+                                                        <div class="title-cart col-md-3 col-sm-4  c-col-image"><a
+                                                                href="https://sixdo.vn/yellow-geomitric-long-sleeves-raw-vest-pd5665"
+                                                                title="Yellow Geomitric Long Sleeves Raw Vest"><img
+                                                                    src="https://sixdo.vn/images/products/2023/small/0b2a9219-copy-1697600673.jpg"
+                                                                    class="img-responsive">.</a></div>
+                                                        <div class="col-md-9 col-sm-8 c-col-name name-pro">
+                                                            <div class="c-box_name"><a
+                                                                    href="https://sixdo.vn/yellow-geomitric-long-sleeves-raw-vest-pd5665"
+                                                                    title="Yellow Geomitric Long Sleeves Raw Vest"
+                                                                    class="c-name">Yellow Geomitric Long Sleeves Raw
+                                                                    Vest</a><a data-id="5665-43-1-0-0"
+                                                                    data-tr="key_item--4"
+                                                                    class="c-del_incart pull-right"
+                                                                    href="javascript:void(0)" title="">x</a></div>
+                                                            <div class="c-sec_option select-color"><label
+                                                                    class="c-label">Màu: </label>Vàng</div>
+                                                            <div class="c-sec_option select-size"><label
+                                                                    class="c-label">Size: </label>.S</div>
+                                                            <div class="c-sec_option select-box"><label
+                                                                    class="c-label">Số lượng</label><span
+                                                                    class="custom-quantity-input">1</span><span
+                                                                    class="total-pro pull-right">2.296.000 VND</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                            </div>
+                                            <div class="c-list_fee">
+                                                <p class="price_order">Tổng tiền tạm tính<span
+                                                        class="order-value pull-right">9.784.000 VND</span></p>
+                                                <div class="c-total_order"> <span class="c-title"> TỔNG HÓA
+                                                        ĐƠN</span><span class="order-value pull-right">9.784.000
+                                                        VND</span></div>
+                                            </div>
+                                        </div><a class="btn c-btn_dark" href="./booking.html"><strong>Đi tới
+                                                đặt hàng</strong></a>
+                                        <!-- <script>
+                                            data1468.push({
+                                                'event': 'addToCart',
+                                                'ecommerce': {
+                                                    'currencyCode': 'VND',
+                                                    'add': {
+                                                        'products': [{ 'name': 'Dark Purple Floral Raw Vest', 'id': '5673', 'price': '2496000', 'brand': 'SixDo', 'category': 'Áo Vest nữ', 'quantity': '1', }, { 'name': 'Dark Purple Floral Raw Vest', 'id': '5673', 'price': '2496000', 'brand': 'SixDo', 'category': 'Áo Vest nữ', 'quantity': '1', }, { 'name': 'Dark Purple Floral Raw Vest', 'id': '5673', 'price': '2496000', 'brand': 'SixDo', 'category': 'Áo Vest nữ', 'quantity': '1', }, { 'name': 'Yellow Geomitric Long Sleeves Raw Vest', 'id': '5665', 'price': '2296000', 'brand': 'SixDo', 'category': 'Áo Vest nữ', 'quantity': '1', },]
+                                                    }
+                                                }
+                                            })</script> -->
+                                        <!-- <script src="https://sixdo.vn/blocks/shopcart/assets/js/shopcart.js"></script> -->
+                                    </div>
+                                </div>
+                                <script>
+
+                                </script> <a href="https://sixdo.vn/en" title="lang" class="c-mlang hidden-lg hidden-md">
+                                    <img src="https://sixdo.vn/images/language_en.png" alt="lang">
+                                </a>
+                            </div>
+
+                            <div id="cssmenu" class="c-main_menu">
+                                <ul class="nav navbar-nav main-menu">
+                                    <li class="level0 first-item menu-item dropdown"><a class="" href="./index.html"
+                                            title="SẢN PHẨM MỚI" target="_self">SẢN PHẨM MỚI</a></li>
+                                    <li class="level0 menu-item dropdown"><a class="" href="./index.html"
+                                            title="SẢN PHẨM GIẢM GIÁ" target="_self">SẢN PHẨM GIẢM GIÁ</a></li>
+                                    <li class="level0 menu-item dropdown"><a class="" href="./index.html"
+                                            title="PHỤ KIỆN" target="_self">PHỤ KIỆN</a></li>
+                                    <li class="level0 last-item menu-item dropdown"><a class=""
+                                            href="./collections.html" title="BỘ SƯU TẬP" target="_self">BỘ SƯU TẬP</a>
+                                    </li>
+                                    <li class="level0 menu-item dropdown"><a class="" href="./fashion.html"
+                                            title="TRÌNH DIỄN THỜI TRANG" target="_self">TRÌNH DIỄN THỜI TRANG</a></li>
+                                </ul>
+                            </div>
+
+                            <script type="text/javascript">
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="c-box_mmenu hidden-lg hidden-md " style="display: none;">
+            <div class="c-box_msearch">
+                <a href="" title="Sixdo logo" class="" style="margin-bottom: 20px;display: inline-block;">
+                    <img src="../images/logo.png" alt="SIXDO BY DO MANH CUONG" class="img-responsive">
+                </a>
+                <div class="search-box ">
+                    <form id="form_search" class="form_search" name="form_search" method="post"
+                        onsubmit="javascript: msubmit_form_search();return false;">
+
+                        <div style="position: relative">
+                            <svg style="position: absolute; left: 5px; top: 10px" xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                </path>
+                            </svg>
+                            <input class="form-control input_search" type="text" id="mkeyword" name="keyword"
+                                placeholder="Gõ từ khóa tìm kiếm" value="">
+                        </div>
+
+
+                        <a class="bt-search-main hidden-xs" id="bt-search" onclick="msubmit_form_search();">
+                            <img src="../images/icon-s.png" alt="icon">
+                            <!--            <i class="fa fa-search"></i>-->
+                        </a>
+
+                        <input type="hidden" id="mlink_search" name="link_search" value="">
+
+                    </form>
+                </div>
+            </div>
+            <a href="javascript:void(0)" title="close" class="c-btn_close--menu">
+                <img src="../images/icon-close.png" alt="close">
+            </a>
+
+            <ul class=" c-menu_mobile row-item ">
+                <li class=" level0 first-item c-has_parent menu-item dropdown">
+                    <div class="c-sub sub-1 "><a class="c-item_name" href="" title="SẢN PHẨM MỚI" target="_self">SẢN
+                            PHẨM MỚI</a></div>
+                </li>
+                <li class=" level0 c-has_parent menu-item dropdown">
+                    <div class="c-sub sub-2 "><a class="c-item_name" href="" title="SẢN PHẨM GIẢM GIÁ"
+                            target="_self">SẢN PHẨM GIẢM GIÁ</a></div>
+                </li>
+                <li class=" level0 c-has_parent menu-item dropdown">
+                    <div class="c-sub sub-3 "><a class="c-item_name" href="" title="PHỤ KIỆN" target="_self">PHỤ
+                            KIỆN</a></div>
+                </li>
+                <li class=" level0 last-item menu-item dropdown">
+                    <div class="c-sub sub-4 "><a class="c-item_name" href="./collections.html" title="BỘ SƯU TẬP"
+                            target="_self">BỘ SƯU TẬP</a></div>
+                </li>
+                <li class=" level0 c-has_parent menu-item dropdown">
+                    <div class="c-sub sub-5 "><a class="c-item_name" href="./fashion.html" title="TRÌNH DIỄN THỜI TRANG"
+                            target="_self">TRÌNH DIỄN THỜI TRANG</a></div>
+                    <!-- NEWS_TYPE for menu	-->
+                </li>
+            </ul>
+            <div class="c-box_maccount">
+            </div>
+            <div class="c-box_maccount">
+                <a class="c-account" href="tel:18006650">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                        </path>
+                    </svg>
+                    Liên hệ: 1800 6650 </a>
+                <a href="mailto:cskh@sixdo.vn" class="c-account d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z">
+                        </path>
+                    </svg>
+                    Email: cskh@sixdo.vn </a>
+
+                <a href="https://sixdo.vn/dang-nhap" title="Đăng nhập" class="c-account c-btn c-btn_call--login">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z">
+                        </path>
+                    </svg>
+                    Đăng nhập </a>
+            </div>
+            <script type="text/javascript">
+
+            </script>
+        </div>
+        <div class="c-mem_overlay" style="display: none;"></div>
+        <div class="c-box_nonmember" style="display: none;">
+            <a href="javascript:void(0)" title="close" class="c-btn_close--account">
+                &nbsp;
+            </a>
+            <p class="c-title_nonAccount">
+                <strong>Tài khoản</strong>
+            </p>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li>
+                    <a class="active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                        aria-selected="true"><strong>Đăng ký</strong></a>
+                </li>
+                <li>
+                    <a class="" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                        aria-selected="false"><strong>Đăng nhập</strong></a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane   active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <form method="post" action="#" novalidate="novalidate" id="formSignUp" name="formSignUp"
+                        class="formSignUp" enctype="multipart/form-data">
+                        <div class="c-group_info">
+                            <h4>Tải APP Sixdo để nhận ngay Voucher trị giá 200.000đ</h4>
+                            <div class="app">
+                                <img src="https://sixdo.vn/images/ios.svg" alt="iOS Mobile APP">
+                                <img src="https://sixdo.vn/images/android.svg" alt="Android Mobile APP">
+                            </div>
+                            <p>Link tải APP</p>
+                            <img src="https://sixdo.vn/images/qrcode.svg" alt="Sixdo Mobile APP">
+
+                        </div>
+
+                        <input type="hidden" name="module" value="members">
+                        <input type="hidden" name="view" value="register">
+                        <input type="hidden" name="task" value="save">
+                        <input type="hidden" name="return" value="L2Nsb3RoZXMtcDIw">
+                    </form>
+                </div>
+                <div class="tab-pane " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <form action="#" name="loginform" id="loginform" class="login_form fff-form form_login"
+                        method="post">
+                        <div class="c-group_info">
+                            <div class="c-group">
+                                <input class="form-control " type="text" name="log_email" id="log_email"
+                                    placeholder="Email đăng nhập" value="">
+                            </div>
+
+                            <div class="c-group">
+                                <input class="form-control" type="password" name="log_password" id="log_password"
+                                    placeholder="Mật khẩu *">
+                            </div>
+                            <a class="c-forgot_pass" title="Quên mật khẩu ?" href="./forgotpass.html">
+                                Quên mật khẩu ? </a>
+
+                            <div class="c-btn_group clearfix">
+                                <a class="btn-login c-btn" id="btnlogin" href="javascript:void (0)" title="Đăng nhập">
+                                    <strong>Đăng nhập</strong>
+                                </a>
+                            </div>
+                            <!-- <p class="or"><span></span></p>
+                                <div class="c-box_social ">
+                                    <a href=""
+                                       title="" class=" social_fb social">
+                                        <i class="fa fa-facebook"></i>                             </a>
+                                    <a href=""
+                                       title="" class=" social_gg social">
+                                        <i class="fa fa-google"></i>                             </a>
+                                </div>-->
+
+                        </div>
+                        <input type="hidden" name="module" value="members">
+                        <input type="hidden" name="view" value="login">
+                        <input type="hidden" name="task" value="login_save">
+                        <input type="hidden" name="return" value="L2Nsb3RoZXMtcDIw">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <main id="main" class="row-content c-box_root main-content" style="">
+
+            <div class="container row-item">
+
+                <div class="success">
+                    <div class="content">
+                        <h1 class="c-title_module">
+                            Đặt hàng thành công </h1>
+                        <img src="../images/ic-box.svg" alt="success" class="img-responsive">
+                        <p class="c-order_code"> Mã đơn hàng: 522356</p>
+                        <div class="c-content_detail">
+                            <p><span style="font-size:12pt">Cảm ơn Quý khách sdfdsf đã mua hàng trên SIXDO!</span></p>
+
+                            <p>&nbsp;</p>
+
+                            <p><span style="font-size:12pt">SIXDO xin thông báo đơn hàng&nbsp;đã được hệ thống ghi
+                                    nhận.</span></p>
+
+                            <p><span style="font-size:12pt">Quý khách vui lòng lưu ý điện thoại trong vòng 24h sẽ có bộ
+                                    phận sale online liên hệ để xác nhận lại và lên đơn cho KH.</span></p>
+
+                            <p><span style="font-size:12pt">Nếu quá 24h không nhận được điện thoại chốt đơn, quý khách
+                                    vui lòng liên hệ lại số hotline 18006650 để SIXDO kiểm tra cho quý khách
+                                    hàng.</span></p>
+
+                            <p><span style="font-size:12pt">Thời gian giao hàng dự kiến từ 3 - 7 ngày.</span></p>
+
+                            <p><span style="font-size:12pt">Xem lại đơn Đặt hàng, tích điểm và voucher giảm giá tại APP
+                                    SIXDO:</span></p>
+
+                            <p><span style="font-size:12pt"><img alt=""
+                                        src="../images/z4338285303023_fa37c410a791ad5d0ec3482425722ac5.jpg"
+                                        style="height:107px; width:108px"><br>
+                                    Tải <a href="https://sixdo.vn/get-app">App SIXDO</a>, đăng nhập bằng số điện thoại
+                                    đặt hàng để kiểm tra thông tin.</span></p>
+
+                            <p>&nbsp;</p>
+
+                            <p><span style="font-size:12pt">Đối với hình thức thanh toán Chuyển khoản, Quý khách vui
+                                    lòng thanh toán theo thông tin sau:</span></p>
+
+                            <p><span style="font-size:12pt">Ngân Hàng Viettin bank – CN Tràng An</span></p>
+
+                            <p><span style="font-size:12pt">Tên Tài khoản: CTCP THOI TRANG SIXDO</span></p>
+
+                            <p><span style="font-size:12pt">Số tài khoản: 116002865308</span></p>
+
+                            <p><span style="font-size:12pt">Nội dung: Số bill trên Web + Số điện thoại KH đặt
+                                    hàng</span></p>
+
+                            <p><span style="font-size:12pt">"Vui lòng điền đúng CÚ PHÁP, SIXDO sẽ lên đơn hàng sau khi
+                                    có thông tin này."</span></p>
+
+                            <p>&nbsp;</p>
+
+                            <p><span style="font-size:12pt">Cảm ơn quý khách sdfdsf đã mua hàng tại SIXDO!</span></p>
+                        </div>
+                        <div class="btn-bottom">
+                            <a href="./index.html" class="c-btn home" title="Trở về trang chủ">
+                                Trở về trang chủ </a>
+                            <a href="./index.html" class="c-btn shop" title="Tiếp tục mua hàng">
+                                Tiếp tục mua hàng </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row c-box_payment hide">
+                    <div class="col-md-6 c-box_info c-col_cart">
+                        <h1 class="c-title_module">
+                            Cảm ơn <br>
+                            Đơn hàng của bạn đã được đặt </h1>
+                        <div class="c-content_box">
+                            <p><span style="font-size:12pt">Cảm ơn Quý khách sdfdsf đã mua hàng trên SIXDO!</span></p>
+
+                            <p>&nbsp;</p>
+
+                            <p><span style="font-size:12pt">SIXDO xin thông báo đơn hàng&nbsp;đã được hệ thống ghi
+                                    nhận.</span></p>
+
+                            <p><span style="font-size:12pt">Quý khách vui lòng lưu ý điện thoại trong vòng 24h sẽ có bộ
+                                    phận sale online liên hệ để xác nhận lại và lên đơn cho KH.</span></p>
+
+                            <p><span style="font-size:12pt">Nếu quá 24h không nhận được điện thoại chốt đơn, quý khách
+                                    vui lòng liên hệ lại số hotline 18006650 để SIXDO kiểm tra cho quý khách
+                                    hàng.</span></p>
+
+                            <p><span style="font-size:12pt">Thời gian giao hàng dự kiến từ 3 - 7 ngày.</span></p>
+
+                            <p><span style="font-size:12pt">Xem lại đơn Đặt hàng, tích điểm và voucher giảm giá tại APP
+                                    SIXDO:</span></p>
+
+                            <p><span style="font-size:12pt"><img alt=""
+                                        src="/upload_images/images/2023/05/12/z4338285303023_fa37c410a791ad5d0ec3482425722ac5.jpg"
+                                        style="height:107px; width:108px"><br>
+                                    Tải <a href="https://sixdo.vn/get-app">App SIXDO</a>, đăng nhập bằng số điện thoại
+                                    đặt hàng để kiểm tra thông tin.</span></p>
+
+                            <p>&nbsp;</p>
+
+                            <p><span style="font-size:12pt">Đối với hình thức thanh toán Chuyển khoản, Quý khách vui
+                                    lòng thanh toán theo thông tin sau:</span></p>
+
+                            <p><span style="font-size:12pt">Ngân Hàng Viettin bank – CN Tràng An</span></p>
+
+                            <p><span style="font-size:12pt">Tên Tài khoản: CTCP THOI TRANG SIXDO</span></p>
+
+                            <p><span style="font-size:12pt">Số tài khoản: 116002865308</span></p>
+
+                            <p><span style="font-size:12pt">Nội dung: Số bill trên Web + Số điện thoại KH đặt
+                                    hàng</span></p>
+
+                            <p><span style="font-size:12pt">"Vui lòng điền đúng CÚ PHÁP, SIXDO sẽ lên đơn hàng sau khi
+                                    có thông tin này."</span></p>
+
+                            <p>&nbsp;</p>
+
+                            <p><span style="font-size:12pt">Cảm ơn quý khách sdfdsf đã mua hàng tại SIXDO!</span></p>
+                        </div>
+                        <div class="c-box_sender">
+                            <h2 class="c-title_box">
+                                Đơn hàng của bạn sdfdsf </h2>
+                            <div class="c-sender">
+                                <p class="c-title">
+                                    Địa chỉ giao hàng </p>
+                                <p class="c-info">
+                                    Tên: sdfdsf </p>
+                                <p class="c-info">
+                                    Địa chỉ: 123 cao , Nam Cao , Bảo Lâm , Cao Bằng </p>
+                                <p class="c-info">
+                                    Số điện thoại: 0123456789 </p>
+                                <p class="c-info">
+                                    Email: 123@gmai.com </p>
+                            </div>
+                            <div class="c-info_method">
+                                <p class="c-title">
+                                    Phương thức giao hàng </p>
+                                <p class="c-">
+                                    Giao hàng tiêu chuẩn: trong vòng 3 - 5 ngày làm việc </p>
+
+                            </div>
+                            <div class="c-info_method">
+                                <p class="c-title">
+                                    Phương thức thanh toán </p>
+                                <p class="c-">
+                                    Thanh toán khi nhận hàng </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 c-col_cart c-box--info_cart">
+                        <h2 class="c-title_">
+                            Sản phẩm đã đặt </h2>
+                        <div class="c-box_item clearfix key_item--1">
+                            <div class="row c-item ">
+                                <div class="title-cart col-md-3 col-sm-4  c-col-image">
+                                    <a href="https://sixdo.vn/white-polka-dots-midi-taffeta-dress-pd5449"
+                                        title="White Polka Dots Midi Taffeta Dress">
+                                        <img src="https://sixdo.vn/images/products/2023/large/0b2a0121-copy-1698041377.jpg"
+                                            onerror="this.src='https://sixdo.vn/images/1443089194_picture-01.png'"
+                                            class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-md-9 col-sm-8 c-col-name name-pro">
+                                    <div class="c-box_name">
+                                        <a href="https://sixdo.vn/white-polka-dots-midi-taffeta-dress-pd5449"
+                                            title="White Polka Dots Midi Taffeta Dress" class="c-name">White Polka Dots
+                                            Midi Taffeta Dress</a>
+                                    </div>
+                                    <p class="c-price">
+                                        3.296.000 VND </p>
+                                    <div class=" select-size">
+                                        <label class="c-label">Size</label>
+                                        M
+                                    </div>
+                                    <div class=" select-color">
+                                        <label class="c-label">Màu sắc</label>
+                                        Trắng
+                                    </div>
+
+                                    <div class=" select-box">
+                                        <label class="c-label">Số lượng</label>
+                                        <span class="custom-quantity-input">
+                                            <span class="spamuan" id="checkadd_quantity_1270847">
+                                                1 </span>
+                                        </span>
+                                        <span class="total-pro pull-right">
+                                            3.296.000 VND </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="total-order">
+                            <div class="c-list_fee">
+                                <p class="price_order">
+                                    Giá trị <span class="order-value pull-right">3.296.000 VND</span>
+                                </p>
+
+                                <p class="c-fee_ship">
+                                    Vận chuyển <!--                        --> <span
+                                        class="c-value order-value pull-right">
+                                        25.000 VND </span>
+                                </p>
+
+                                <p class="c-fee_ship">
+                                    Giảm giá <span class="order-value pull-right">0 VND</span>
+                                </p>
+                            </div>
+                            <div class="c-total_order">
+                                Tổng <!--                    --> <span class="order-value pull-right">3.321.000
+                                    VND</span>
+                            </div>
+                        </div>
+                        <div class="c-box_note">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <div class="clearfix"></div>
+        <div class="pos-bottom row-content">
+            <div class="block_banners banners_0 blocks_banner blocks0 block">
+                <div id="block-24" class="block-intro-config block-banner block-banner-banner_footer"
+                    style="float:none;">
+                    <div class="container-flex">
+                        <div class="item">
+                            <a href="https://sixdo.vn/chinh-sach-doi-tra-n354" target="_blank">
+                                <img src="https://sixdo.vn/images/banners/original/limited-time2x-1624335793.png"
+                                    alt="Đổi trả sản phẩm" class="img-responsive">
+                                <div>
+                                    <p><strong>6 NGÀY ĐỔI SẢN PHẨM</strong></p>
+
+                                    <p>Đổi trả sản phẩm trong 6 ngày</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://sixdo.vn/lien-he" target="_blank">
+                                <img src="https://sixdo.vn/images/banners/original/group-242x-1624335840.png"
+                                    alt="Hotline" class="img-responsive">
+                                <div>
+                                    <p><strong>Hotline 1800 6650</strong></p>
+
+                                    <p>8h00 - 21h00, T2 - CN nghỉ Tết Âm lịch</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://sixdo.vn/he-thong-cua-hang" target="_blank">
+                                <img src="https://sixdo.vn/images/banners/original/group-262x-1624335863.png"
+                                    alt="HỆ THỐNG CỬA HÀNG" class="img-responsive">
+                                <div>
+                                    <p><strong>HỆ THỐNG CỬA HÀNG</strong></p>
+
+                                    <p>60 cửa hàng trên toàn hệ thống</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="" target="_blank">
+                                <img src="https://sixdo.vn/images/banners/original/path-833-1623718758-1624336147.png"
+                                    alt="VẬN CHUYỂN" class="img-responsive">
+                                <div>
+                                    <p><strong>VẬN CHUYỂN</strong></p>
+
+                                    <p>Đồng giá 25K toàn quốc</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div><!--end: #block-24-->
+            </div>
+        </div>
+
+        <footer class="container-fuild c-footer ">
+            <div class="container">
+                <div class="row sitemap">
+                    <div class="col-sm-4 item" style="margin-bottom: 0px">
+                        <div data-toggle="collapse" data-target="#demo" class="c-title menu-bottom-collapse"
+                            style="margin-bottom: 10px;">
+                            <span style="font-family: 't-medium';">SẢN PHẨM</span>
+                            <svg class="chevron-right" style="width: 15px; height: 15px; margin-bottom: 4px"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="c-info collapse" id="demo">
+                            <ul style="margin-top: 10px" id="block-0" class="block-menu block-menu-default  ">
+                                <li class="menu-186 "><a href="./index.html" title="SẢN PHẨM MỚI">SẢN
+                                        PHẨM
+                                        MỚI</a></li>
+                                <li class="menu-187 "><a href="./index.html" title="SẢN PHẨM GIẢM GIÁ">SẢN
+                                        PHẨM GIẢM GIÁ</a></li>
+                                <li class="menu-188 "><a href="./index.html" title="PHỤ KIỆN">PHỤ KIỆN</a>
+                                </li>
+                                <li class="menu-189 "><a href="./collections.html" title="BỘ SƯU TẬP">BỘ SƯU
+                                        TẬP</a></li>
+                                <li class="menu-190 "><a href="./fashion.html" title="TRÌNH DIỄN THỜI TRANG">TRÌNH DIỄN
+                                        THỜI TRANG</a></li>
+                            </ul>
+
+                            <style>
+                                @media screen and (max-width: 568px) {
+                                    footer .sitemap .item .c-info.collapsing ul {
+                                        font-family: unset !important;
+                                        padding-left: 10px
+                                    }
+
+                                    footer .sitemap .item .c-info.collapse ul {
+                                        font-family: unset !important;
+                                        padding-left: 10px
+                                    }
+                                }
+                            </style>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 item">
+                        <!-- <p class="c-title"></p> -->
+                        <div class="c-info">
+                            <!--                        -->
+                            <ul style="margin-top: 10px" id="block-0" class="block-menu block-menu-default  ">
+                                <li class="menu-167 "><a href="https://sixdo.vn/chinh-sach-sixdo-n385"
+                                        title="CHÍNH SÁCH MUA SẮM">CHÍNH SÁCH MUA SẮM</a></li>
+                                <li class="menu-50 "><a href="https://sixdo.vn/sixclub-st30" title="SIXCLUB">SIXCLUB</a>
+                                </li>
+                                <li class="menu-149 "><a href="https://sixdo.vn/cau-chuyen-thuong-hieu-st31"
+                                        title="CÂU CHUYỆN THƯƠNG HIỆU">CÂU CHUYỆN THƯƠNG HIỆU</a></li>
+                                <li class="menu-162 "><a href="https://sixdo.vn/he-thong-cua-hang"
+                                        title="HỆ THỐNG CỬA HÀNG">HỆ THỐNG CỬA HÀNG</a></li>
+                                <li class="menu-159 "><a href="https://sixdo.vn/tin-tuc-sixdo-cn96"
+                                        title="THÔNG CÁO BÁO CHÍ">THÔNG CÁO BÁO CHÍ</a></li>
+                                <li class="menu-170 "><a href="https://sixdo.vn/tuyen-dung" title="TUYỂN DỤNG">TUYỂN
+                                        DỤNG</a></li>
+                                <li class="menu-172 "><a href="https://sixdo.vn/lien-he" title="LIÊN HỆ">LIÊN HỆ</a>
+                                </li>
+                            </ul>
+
+                            <style>
+                                @media screen and (max-width: 568px) {
+                                    footer .sitemap .item .c-info.collapsing ul {
+                                        font-family: unset !important;
+                                        padding-left: 10px
+                                    }
+
+                                    footer .sitemap .item .c-info.collapse ul {
+                                        font-family: unset !important;
+                                        padding-left: 10px
+                                    }
+                                }
+                            </style>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 item">
+                        <div class="c-info" style="margin-bottom: 20px">
+                            <a target="_blank" href="" title="Facebook" class="c-social">
+                                <img style="width: 30px;" src="../images/iconSocial/ic-fb.svg" alt="Facebook"
+                                    class="img-responsive">
+                            </a>
+                            <a target="_blank" href="" title="Instagram" class="c-social">
+                                <img style="width: 30px; margin-left: 5px;" src="../images/iconSocial/ic-instagram.svg"
+                                    alt="Instagram" class="img-responsive">
+                            </a>
+                            <a target="_blank" href="" title="Youtube" class="c-social">
+                                <img style="width: 30px; margin-left: 5px;" src="../images/iconSocial/ic-yt.svg"
+                                    alt="Youtube" class="img-responsive">
+                            </a>
+                            <a target="_blank" href="" title="Tiktok" class="c-social">
+                                <img style="width: 30px; margin-left: 5px;" src="../images/iconSocial/ic-tictok.svg"
+                                    alt="Tiktok" class="img-responsive">
+                            </a>
+                            <a target="_blank" href="" title="shopee" class="c-social">
+                                <img style="width: 30px; height: 30px; margin-left: 5px;"
+                                    src="../images/iconSocial/ic-shopee.png" alt="shopee" class="img-responsive">
+                            </a>
+                            <a target="_blank" href="" title="lazada" class="c-social">
+                                <img style="width: 40px; height: 30px; margin-left: 5px;"
+                                    src="../images/iconSocial/ic-lazada.png" alt="lazada" class="img-responsive">
+                            </a>
+                        </div>
+                        <a target="_blank" title="Thông báo bộ công thương"
+                            href="http://online.gov.vn/Home/WebDetails/76361">
+                            <img width="90" src="../images/iconSocial/Thongbaobocongthuong.svg"
+                                alt="Thông báo bộ công thương">
+                        </a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <span>©2023 Sifa</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="down_app">
+        <span class="close">×</span>
+        <p><img alt="" src="../images/21.jpg" style="width:100%"></p>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <!-- Carousel -->
+    <script src="../assets/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/home.js"></script>
+    <script src="../assets/js/template.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    // nav: true
+                },
+                600: {
+                    items: 1,
+                    // nav: false
+                },
+                1000: {
+                    items: 1,
+                    // nav: true,
+                    // loop: false
+                }
+            }
+        })
+
+    </script>
+</body>
+
+</html>

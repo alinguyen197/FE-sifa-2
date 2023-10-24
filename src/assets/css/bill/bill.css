@@ -1,0 +1,229 @@
+.success {
+    padding: 60px 0
+}
+
+.success .content {
+    max-width: 750px;
+    margin: auto;
+    text-align: center
+}
+
+.success .c-title_module {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px
+}
+
+.success img {
+    width: 142px;
+    display: block;
+    margin: 0 auto 30px
+}
+
+.success .c-order_code {
+    min-width: 200px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 18px;
+    background: #212121;
+    padding: 8px 15px;
+    margin-bottom: 30px
+}
+
+.success .btn-bottom {
+    max-width: 630px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.success .btn-bottom .c-btn {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    -webkit-transition: ease-in-out 350ms;
+    -moz-transition: ease-in-out 350ms;
+    -ms-transition: ease-in-out 350ms;
+    -o-transition: ease-in-out 350ms;
+    transition: ease-in-out 350ms
+}
+
+.success .btn-bottom .c-btn:hover {
+    font-family: t-medium, sans-serif
+}
+
+.success .btn-bottom .home {
+    color: #212121;
+    border: 2px solid #ccc;
+}
+
+.success .btn-bottom .home:hover {
+    border-color: #212121
+}
+
+.success .btn-bottom .shop {
+    background: #fff;
+    border: 1px solid #D83564;
+    color: #D83564
+}
+
+.success .btn-bottom .shop:hover {
+    background: #D83564;
+    color:#fff;
+}
+
+.c-box_payment {
+    justify-content: space-between;
+    padding-top: 40px;
+    margin-bottom: 50px
+}
+
+.c-box_payment .c-col_cart {
+    max-width: 570px
+}
+
+.c-box_payment .c-title_module {
+    font-size: 26px;
+    font-family: Montserrat-Bold;
+    text-transform: uppercase;
+    margin-bottom: 20px
+}
+
+.c-box_payment .c-content_box {
+    padding-bottom: 20px;
+    color: #999
+}
+
+.c-box_payment .c-box_sender .c-title_box {
+    font-family: Montserrat-SemiBold;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d6d6d6;
+    margin-bottom: 15px;
+    color: #999
+}
+
+.c-box_payment .c-box_sender .c-title {
+    font-family: Montserrat-SemiBold;
+    text-transform: uppercase
+}
+
+.c-box_payment .c-box_sender .c-info {
+    padding-left: 15px
+}
+
+.c-box_payment .c-box_sender .c-sender {
+    padding-bottom: 20px;
+    color: #999
+}
+
+.c-box_payment .c-box_sender .c-info_method {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-top: 1px solid #d6d6d6;
+    color: #999
+}
+
+.c-box_payment .c-box_sender .c-info_method .c- {
+    font-weight: bold
+}
+
+.c-box_payment .c-box--info_cart .c-title_ {
+    font-family: Montserrat-SemiBold;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #d6d6d6;
+    margin-bottom: 25px
+}
+
+.c-box_payment .c-box_item {
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #d6d6d6
+}
+
+.c-box_payment .c-col-image a {
+    max-width: 100px;
+    display: block
+}
+
+.c-box_payment .c-box_name {
+    display: flex;
+    justify-content: space-between
+}
+
+.c-box_payment .c-name {
+    display: inline-block;
+    font-family: Montserrat-SemiBold;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    padding-right: 15px
+}
+
+.c-box_payment .c-name:hover {
+    text-decoration: none
+}
+
+.c-box_payment .c-price {
+    font-size: 14px;
+    margin-bottom: 20px
+}
+
+.c-box_payment .c-label {
+    min-width: 90px;
+    font-weight: normal;
+    margin-bottom: 2px
+}
+
+.c-box_payment .custom-quantity-input {
+    max-width: 160px;
+    margin-right: 10px
+}
+
+.c-box_payment .custom-quantity-input span {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 22px;
+    cursor: pointer;
+    vertical-align: top
+}
+
+.c-box_payment .total-pro {
+    font-family: Montserrat-SemiBold
+}
+
+.c-box_payment .c-list_fee {
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d6d6d6
+}
+
+.c-box_payment .c-total_order {
+    font-family: Montserrat-SemiBold;
+    margin-bottom: 25px
+}
+
+.c-box_payment .c-redirect {
+    display: block;
+    margin-bottom: 30px
+}
+
+@media (max-width: 568px) {
+    .success .btn-bottom {
+        flex-wrap:wrap;
+        justify-content: center
+    }
+
+    .success .btn-bottom .home {
+        margin-bottom: 20px
+    }
+}
+
+/*# sourceMappingURL=success.css.map */
