@@ -1,0 +1,166 @@
+.c-title_module {
+    font-size: 20px;
+    font-family: Montserrat-SemiBold;
+    text-align: center;
+    padding: 35px 0px 20px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #d6d6d6
+}
+
+.account-layout {
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 100px
+}
+
+.account-layout .c-box_acc {
+    padding-top: 20px;
+    margin: 0;
+    justify-content: space-between
+}
+
+@media (min-width: 992px) and (max-width: 1699px) {
+    .account-layout .c-box_acc {
+        justify-content:space-around
+    }
+}
+
+.account-layout .form-second {
+    margin-top: 40px
+}
+
+.account-layout .form-account {
+    padding: 0px 15px
+}
+
+.account-layout .title-head {
+    font-size: 14px;
+    padding-bottom: 7px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #d6d6d6;
+    font-weight: bold
+}
+
+.account-layout .form-group {
+    position: relative
+}
+
+.account-layout .form-control {
+    height: 40px;
+    border: 1px solid #d6d6d6;
+    border-radius: unset
+}
+
+.account-layout label {
+    font-weight: normal
+}
+
+.account-layout .save_log {
+    position: absolute;
+    visibility: hidden
+}
+
+.account-layout .c-lbl--save_log {
+    padding-left: 45px;
+    padding-top: 5px;
+    position: relative;
+    cursor: pointer
+}
+
+.account-layout input.save_log+label:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid #d6d6d6;
+    position: absolute;
+    left: 0;
+    top: 0px
+}
+
+.account-layout input[type='checkbox']:checked+label:before {
+    content: "\2713";
+    padding-top: 4px
+}
+
+.account-layout .note-input {
+    margin: 15px 0
+}
+
+.account-layout .c-btn_sub {
+    display: block;
+    font-size: 20px;
+    font-family: Montserrat-SemiBold;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    background: #D83564;
+    padding: 9px;
+    -webkit-transition: ease-in-out 400ms;
+    -moz-transition: ease-in-out 400ms;
+    -ms-transition: ease-in-out 400ms;
+    -o-transition: ease-in-out 400ms;
+    transition: ease-in-out 400ms
+}
+
+.account-layout .c-btn_sub:hover {
+    background: #fff;
+    border: 1px solid #D83564;
+    text-decoration: none;
+    color: #D83564
+}
+
+.account-layout .c-redirect {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px
+}
+
+.account-layout .c-redirect_log {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #444
+}
+
+.account-layout .c-redirect_log:hover {
+    color: #000000
+}
+
+.field-icon {
+    float: right;
+    margin-top: -38px;
+    margin-right: 7px;
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    cursor: pointer
+}
+
+.c-box_acc {
+    margin: 0
+}
+
+@media (max-width: 1024px) {
+    .account-layout .form-second {
+        margin-top:0px
+    }
+
+    .account-layout .title-head {
+        display: none
+    }
+}
+
+@media (max-width: 960px) {
+    .c-box_root {
+        min-height:auto !important
+    }
+
+    .account-layout {
+        padding-bottom: 0
+    }
+}
+
+/*# sourceMappingURL=sign.css.map */

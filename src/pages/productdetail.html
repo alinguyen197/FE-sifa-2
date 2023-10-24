@@ -1,0 +1,1472 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Magic Zoom -->
+    <link rel="stylesheet" href="../assets/vendor/magiczoom-trial/magiczoom/magiczoom.css">
+    <!-- Swiper slider CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Light Gallery -->
+    <link rel="stylesheet" href="../assets/vendor/lightslider-master/dist/css/lightslider.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="../assets/css/menu/menu.css">
+    <link rel="stylesheet" href="../assets/css/home/home.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/libary.css">
+    <link rel="stylesheet" href="../assets/css/shopcart/shopcart.css">
+    <link rel="stylesheet" href="../assets/css/product/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/product/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/product/css/lightslider.css">
+    <link rel="stylesheet" href="../assets/css/product/css/product.css">
+
+</head>
+
+<body>
+    <div id="page" class="c-home_page">
+        <header>
+            <div class="header header_home ">
+                <div class="container">
+                    <div class="main_header">
+                        <div class="logo">
+                            <a href="./index.html" title="SIXDO BY DO MANH CUONG">
+                                <img src="../images/logo.png" alt="SIXDO BY DO MANH CUONG"
+                                    class="img-responsive c-img_logo">
+                            </a>
+                        </div>
+                        <div class="menu_header">
+                            <div class="menu_login">
+                                <a href="javascript:void(0)" title="login" id="c-call_account"
+                                    class="c-account hidden-xs hidden-sm" onclick="$('#memLog').trigger('click')">
+                                    <img src="../images/account.png" alt="login" class="img-responsive">
+                                    login </a>
+                                <div class="c-lang c-item_child search_ c-box_search hidden-sm hidden-xs"
+                                    style="text-transform: unset;">
+                                    <a href="javacript:void(0)" title="Tìm kiếm" class="c-call_search">
+                                        <i class="fa fa-search"></i>
+                                        <span class="hidden-sm hidden-xs">Tìm kiếm</span>
+                                    </a>
+                                    <!--  -->
+                                    <div class="search-box ">
+                                        <form id="form_search" class="form_search" name="form_search" method="post"
+                                            onsubmit="">
+                                            <input class="form-control input_search" type="text" id="keyword"
+                                                name="keyword" value="Gõ từ khóa tìm kiếm">
+                                            <a class="bt-search-main" id="bt-search" onclick="submit_form_search();"> <i
+                                                    class="fa fa-search"></i></a>
+                                            <input type="hidden" id="link_search" name="link_search"
+                                                value="https://sixdo.vn/tim-kiem">
+                                        </form>
+                                    </div>
+                                </div>
+                                <a class="c-lang hidden-xs hidden-sm  active" href="https://sixdo.vn" title="VN" 1="">
+                                    VN </a>
+                                <a class="c-lang hidden-xs hidden-sm " href="https://sixdo.com" title="EN"
+                                    target="_blank">
+                                    EN </a>
+                                <div class="sb-toggle hidden-lg hidden-md  " id="call_menu">
+                                    <div class="navicon-line"></div>
+                                    <div class="navicon-line"></div>
+                                    <div class="navicon-line"></div>
+                                </div>
+                                <a href="https://sixdo.vn/gio-hang" title="Giỏ hàng" class="c-lang c-btn_cart c-btn ">
+                                    <i class="fa fa-shopping-cart hidden-xs hidden-sm"></i>
+                                    <span class="c-amount_cart hidden-xs hidden-sm" style="font-size: 12px">
+                                    </span>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                        class="bi bi-cart4 hidden-lg hidden-md" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#fff" fill-rule="evenodd"
+                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
+                                        </path>
+                                    </svg>
+
+                                    <div class="c-alert_addCart hide"></div>
+                                </a>
+
+                                <div class="c-modal_overlay"></div>
+                                <div class="submenu view-cart-hea c-box_viewCart c-view_prd" style="display: none;">
+                                    <a href="javascript:void(0)" title="close" class="c-close_cart">
+                                        x
+                                    </a>
+                                    <div class="c-box_shopping--cart">
+                                        <p><strong>GIỎ HÀNG</strong></p>
+                                        <div class="c-calc_bag">
+                                            <div class="c-list_item">
+                                                <div class="c-box_item clearfix key_item--1">
+                                                    <div class="row c-item ">
+                                                        <div class="title-cart col-md-3 col-sm-4  c-col-image"><a
+                                                                href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
+                                                                title="Dark Purple Floral Raw Vest"><img
+                                                                    src="https://sixdo.vn/images/products/2023/small/0b2a9556-copy-1697601907.jpg"
+                                                                    class="img-responsive">.</a></div>
+                                                        <div class="col-md-9 col-sm-8 c-col-name name-pro">
+                                                            <div class="c-box_name"><a
+                                                                    href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
+                                                                    title="Dark Purple Floral Raw Vest"
+                                                                    class="c-name">Dark Purple Floral Raw Vest</a><a
+                                                                    data-id="5673-176-1-0-0" data-tr="key_item--1"
+                                                                    class="c-del_incart pull-right"
+                                                                    href="javascript:void(0)" title="">x</a></div>
+                                                            <div class="c-sec_option select-color"><label
+                                                                    class="c-label">Màu: </label>Màu tím đậm</div>
+                                                            <div class="c-sec_option select-size"><label
+                                                                    class="c-label">Size: </label>.S</div>
+                                                            <div class="c-sec_option select-box"><label
+                                                                    class="c-label">Số lượng</label><span
+                                                                    class="custom-quantity-input">1</span><span
+                                                                    class="total-pro pull-right">2.496.000 VND</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="c-box_item clearfix key_item--2">
+                                                    <div class="row c-item ">
+                                                        <div class="title-cart col-md-3 col-sm-4  c-col-image"><a
+                                                                href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
+                                                                title="Dark Purple Floral Raw Vest"><img
+                                                                    src="https://sixdo.vn/images/products/2023/small/0b2a9556-copy-1697601907.jpg"
+                                                                    class="img-responsive">.</a></div>
+                                                        <div class="col-md-9 col-sm-8 c-col-name name-pro">
+                                                            <div class="c-box_name"><a
+                                                                    href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
+                                                                    title="Dark Purple Floral Raw Vest"
+                                                                    class="c-name">Dark Purple Floral Raw Vest</a><a
+                                                                    data-id="5673-176-2-0-0" data-tr="key_item--2"
+                                                                    class="c-del_incart pull-right"
+                                                                    href="javascript:void(0)" title="">x</a></div>
+                                                            <div class="c-sec_option select-color"><label
+                                                                    class="c-label">Màu: </label>Màu tím đậm</div>
+                                                            <div class="c-sec_option select-size"><label
+                                                                    class="c-label">Size: </label>.M</div>
+                                                            <div class="c-sec_option select-box"><label
+                                                                    class="c-label">Số lượng</label><span
+                                                                    class="custom-quantity-input">1</span><span
+                                                                    class="total-pro pull-right">2.496.000 VND</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="c-box_item clearfix key_item--3">
+                                                    <div class="row c-item ">
+                                                        <div class="title-cart col-md-3 col-sm-4  c-col-image"><a
+                                                                href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
+                                                                title="Dark Purple Floral Raw Vest"><img
+                                                                    src="https://sixdo.vn/images/products/2023/small/0b2a9556-copy-1697601907.jpg"
+                                                                    class="img-responsive">.</a></div>
+                                                        <div class="col-md-9 col-sm-8 c-col-name name-pro">
+                                                            <div class="c-box_name"><a
+                                                                    href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
+                                                                    title="Dark Purple Floral Raw Vest"
+                                                                    class="c-name">Dark Purple Floral Raw Vest</a><a
+                                                                    data-id="5673-176-3-0-0" data-tr="key_item--3"
+                                                                    class="c-del_incart pull-right"
+                                                                    href="javascript:void(0)" title="">x</a></div>
+                                                            <div class="c-sec_option select-color"><label
+                                                                    class="c-label">Màu: </label>Màu tím đậm</div>
+                                                            <div class="c-sec_option select-size"><label
+                                                                    class="c-label">Size: </label>.L</div>
+                                                            <div class="c-sec_option select-box"><label
+                                                                    class="c-label">Số lượng</label><span
+                                                                    class="custom-quantity-input">1</span><span
+                                                                    class="total-pro pull-right">2.496.000 VND</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="c-box_item clearfix key_item--4">
+                                                    <div class="row c-item ">
+                                                        <div class="title-cart col-md-3 col-sm-4  c-col-image"><a
+                                                                href="https://sixdo.vn/yellow-geomitric-long-sleeves-raw-vest-pd5665"
+                                                                title="Yellow Geomitric Long Sleeves Raw Vest"><img
+                                                                    src="https://sixdo.vn/images/products/2023/small/0b2a9219-copy-1697600673.jpg"
+                                                                    class="img-responsive">.</a></div>
+                                                        <div class="col-md-9 col-sm-8 c-col-name name-pro">
+                                                            <div class="c-box_name"><a
+                                                                    href="https://sixdo.vn/yellow-geomitric-long-sleeves-raw-vest-pd5665"
+                                                                    title="Yellow Geomitric Long Sleeves Raw Vest"
+                                                                    class="c-name">Yellow Geomitric Long Sleeves Raw
+                                                                    Vest</a><a data-id="5665-43-1-0-0"
+                                                                    data-tr="key_item--4"
+                                                                    class="c-del_incart pull-right"
+                                                                    href="javascript:void(0)" title="">x</a></div>
+                                                            <div class="c-sec_option select-color"><label
+                                                                    class="c-label">Màu: </label>Vàng</div>
+                                                            <div class="c-sec_option select-size"><label
+                                                                    class="c-label">Size: </label>.S</div>
+                                                            <div class="c-sec_option select-box"><label
+                                                                    class="c-label">Số lượng</label><span
+                                                                    class="custom-quantity-input">1</span><span
+                                                                    class="total-pro pull-right">2.296.000 VND</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                            </div>
+                                            <div class="c-list_fee">
+                                                <p class="price_order">Tổng tiền tạm tính<span
+                                                        class="order-value pull-right">9.784.000 VND</span></p>
+                                                <div class="c-total_order"> <span class="c-title"> TỔNG HÓA
+                                                        ĐƠN</span><span class="order-value pull-right">9.784.000
+                                                        VND</span></div>
+                                            </div>
+                                        </div><a class="btn c-btn_dark" href="./booking.html"><strong>Đi tới
+                                                đặt hàng</strong></a>
+                                        <!-- <script>
+                                            data1468.push({
+                                                'event': 'addToCart',
+                                                'ecommerce': {
+                                                    'currencyCode': 'VND',
+                                                    'add': {
+                                                        'products': [{ 'name': 'Dark Purple Floral Raw Vest', 'id': '5673', 'price': '2496000', 'brand': 'SixDo', 'category': 'Áo Vest nữ', 'quantity': '1', }, { 'name': 'Dark Purple Floral Raw Vest', 'id': '5673', 'price': '2496000', 'brand': 'SixDo', 'category': 'Áo Vest nữ', 'quantity': '1', }, { 'name': 'Dark Purple Floral Raw Vest', 'id': '5673', 'price': '2496000', 'brand': 'SixDo', 'category': 'Áo Vest nữ', 'quantity': '1', }, { 'name': 'Yellow Geomitric Long Sleeves Raw Vest', 'id': '5665', 'price': '2296000', 'brand': 'SixDo', 'category': 'Áo Vest nữ', 'quantity': '1', },]
+                                                    }
+                                                }
+                                            })</script> -->
+                                        <!-- <script src="https://sixdo.vn/blocks/shopcart/assets/js/shopcart.js"></script> -->
+                                    </div>
+                                </div>
+                                <script>
+
+                                </script> <a href="https://sixdo.vn/en" title="lang" class="c-mlang hidden-lg hidden-md">
+                                    <img src="https://sixdo.vn/images/language_en.png" alt="lang">
+                                </a>
+                            </div>
+
+                            <div id="cssmenu" class="c-main_menu">
+                                <ul class="nav navbar-nav main-menu">
+                                    <li class="level0 first-item menu-item dropdown"><a class="" href="./index.html"
+                                            title="SẢN PHẨM MỚI" target="_self">SẢN PHẨM MỚI</a></li>
+                                    <li class="level0 menu-item dropdown"><a class="" href="./index.html" title="SẢN PHẨM GIẢM GIÁ"
+                                            target="_self">SẢN PHẨM GIẢM GIÁ</a></li>
+                                    <li class="level0 menu-item dropdown"><a class="" href="./index.html" title="PHỤ KIỆN"
+                                            target="_self">PHỤ KIỆN</a></li>
+                                    <li class="level0 last-item menu-item dropdown"><a class=""
+                                            href="./collections.html" title="BỘ SƯU TẬP" target="_self">BỘ SƯU TẬP</a>
+                                    </li>
+                                    <li class="level0 menu-item dropdown"><a class="" href="./fashion.html"
+                                            title="TRÌNH DIỄN THỜI TRANG" target="_self">TRÌNH DIỄN THỜI TRANG</a></li>
+                                </ul>
+                            </div>
+
+                            <script type="text/javascript">
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="c-box_mmenu hidden-lg hidden-md " style="display: none;">
+            <div class="c-box_msearch">
+                <a href="https://sixdo.vn/" title="Sixdo logo" class=""
+                    style="margin-bottom: 20px;display: inline-block;">
+                    <img src="../images/logo.png" alt="SIXDO BY DO MANH CUONG" class="img-responsive">
+                </a>
+                <div class="search-box ">
+                    <form id="form_search" class="form_search" name="form_search" method="post"
+                        onsubmit="javascript: msubmit_form_search();return false;">
+
+                        <div style="position: relative">
+                            <svg style="position: absolute; left: 5px; top: 10px" xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                </path>
+                            </svg>
+                            <input class="form-control input_search" type="text" id="mkeyword" name="keyword"
+                                placeholder="Gõ từ khóa tìm kiếm" value="">
+                        </div>
+
+
+                        <a class="bt-search-main hidden-xs" id="bt-search" onclick="msubmit_form_search();">
+                            <img src="../images/icon-s.png" alt="icon">
+                            <!--            <i class="fa fa-search"></i>-->
+                        </a>
+
+                        <input type="hidden" id="mlink_search" name="link_search" value="https://sixdo.vn/tim-kiem">
+
+                    </form>
+                </div>
+            </div>
+            <a href="javascript:void(0)" title="close" class="c-btn_close--menu">
+                <img src="../images/icon-close.png" alt="close">
+            </a>
+
+            <ul class=" c-menu_mobile row-item ">
+                <li class=" level0 first-item c-has_parent menu-item dropdown">
+                    <div class="c-sub sub-1 "><a class="c-item_name" href="./index.html"
+                            title="SẢN PHẨM MỚI" target="_self">SẢN PHẨM MỚI</a></div>
+                </li>
+                <li class=" level0 c-has_parent menu-item dropdown">
+                    <div class="c-sub sub-2 "><a class="c-item_name" href="./index.html"
+                            title="SẢN PHẨM GIẢM GIÁ" target="_self">SẢN PHẨM GIẢM GIÁ</a></div>
+                </li>
+                <li class=" level0 c-has_parent menu-item dropdown">
+                    <div class="c-sub sub-3 "><a class="c-item_name" href="./index.html"
+                            title="PHỤ KIỆN" target="_self">PHỤ KIỆN</a></div>
+                </li>
+                <li class=" level0 last-item menu-item dropdown">
+                    <div class="c-sub sub-4 "><a class="c-item_name" href="./collections.html"
+                            title="BỘ SƯU TẬP" target="_self">BỘ SƯU TẬP</a></div>
+                </li>
+                <li class=" level0 c-has_parent menu-item dropdown">
+                    <div class="c-sub sub-5 "><a class="c-item_name" href="./fashion.html"
+                            title="TRÌNH DIỄN THỜI TRANG" target="_self">TRÌNH DIỄN THỜI TRANG</a></div>
+                    <!-- NEWS_TYPE for menu	-->
+                </li>
+            </ul>
+            <div class="c-box_maccount">
+            </div>
+            <div class="c-box_maccount">
+                <a class="c-account" href="tel:18006650">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                        </path>
+                    </svg>
+                    Liên hệ: 1800 6650 </a>
+                <a href="mailto:cskh@sixdo.vn" class="c-account d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z">
+                        </path>
+                    </svg>
+                    Email: cskh@sixdo.vn </a>
+
+                <a href="https://sixdo.vn/dang-nhap" title="Đăng nhập" class="c-account c-btn c-btn_call--login">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z">
+                        </path>
+                    </svg>
+                    Đăng nhập </a>
+            </div>
+            <script type="text/javascript">
+
+            </script>
+        </div>
+        <div class="c-mem_overlay" style="display: none;"></div>
+        <div class="c-box_nonmember" style="display: none;">
+            <a href="javascript:void(0)" title="close" class="c-btn_close--account">
+                &nbsp;
+            </a>
+            <p class="c-title_nonAccount">
+                <strong>Tài khoản</strong>
+            </p>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li >
+                  <a class="active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><strong>Đăng ký</strong></a>
+                </li>
+                <li >
+                  <a class="" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><strong>Đăng nhập</strong></a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane   active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <form method="post" action="#" novalidate="novalidate" id="formSignUp" name="formSignUp"
+                        class="formSignUp" enctype="multipart/form-data">
+                        <div class="c-group_info">
+                            <h4>Tải APP Sixdo để nhận ngay Voucher trị giá 200.000đ</h4>
+                            <div class="app">
+                                <img src="https://sixdo.vn/images/ios.svg" alt="iOS Mobile APP">
+                                <img src="https://sixdo.vn/images/android.svg" alt="Android Mobile APP">
+                            </div>
+                            <p>Link tải APP</p>
+                            <img src="https://sixdo.vn/images/qrcode.svg" alt="Sixdo Mobile APP">
+
+                        </div>
+
+                        <input type="hidden" name="module" value="members">
+                        <input type="hidden" name="view" value="register">
+                        <input type="hidden" name="task" value="save">
+                        <input type="hidden" name="return" value="L2Nsb3RoZXMtcDIw">
+                    </form>
+                </div>
+                <div class="tab-pane " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <form action="#" name="loginform" id="loginform" class="login_form fff-form form_login"
+                        method="post">
+                        <div class="c-group_info">
+                            <div class="c-group">
+                                <input class="form-control " type="text" name="log_email" id="log_email"
+                                    placeholder="Email đăng nhập" value="">
+                            </div>
+
+                            <div class="c-group">
+                                <input class="form-control" type="password" name="log_password" id="log_password"
+                                    placeholder="Mật khẩu *">
+                            </div>
+                            <a class="c-forgot_pass" title="Quên mật khẩu ?" href="./forgotpass.html">
+                                Quên mật khẩu ? </a>
+
+                            <div class="c-btn_group clearfix">
+                                <a class="btn-login c-btn" id="btnlogin" href="javascript:void (0)" title="Đăng nhập">
+                                    <strong>Đăng nhập</strong>
+                                </a>
+                            </div>
+                            <!-- <p class="or"><span></span></p>
+                                <div class="c-box_social ">
+                                    <a href=""
+                                       title="" class=" social_fb social">
+                                        <i class="fa fa-facebook"></i>                             </a>
+                                    <a href=""
+                                       title="" class=" social_gg social">
+                                        <i class="fa fa-google"></i>                             </a>
+                                </div>-->
+
+                        </div>
+                        <input type="hidden" name="module" value="members">
+                        <input type="hidden" name="view" value="login">
+                        <input type="hidden" name="task" value="login_save">
+                        <input type="hidden" name="return" value="L2Nsb3RoZXMtcDIw">
+                    </form>
+                </div>
+              </div>
+        </div>
+
+        <!-- PRODUCT DETAIL -->
+        <div class="container row-item">
+
+            <input type="hidden" id="alert_info"
+                value="[&quot;<i class=\&quot;fa fa-check-circle\&quot;><\/i> L\u1ed7i,kh\u00f4ng k\u1ebft n\u1ed1i \u0111\u01b0\u1ee3c.&quot;,&quot;<i class=\&quot;fa fa-user\&quot;><\/i> B\u1ea1n c\u1ea7n \u0111\u0103ng nh\u1eadp \u0111\u1ec3 s\u1eed d\u1ee5ng ch\u1ee9c n\u0103ng n\u00e0y&quot;,&quot;B\u1ea1n \u0111\u00e3 th\u00edch s\u1ea3n ph\u1ea9m n\u00e0y&quot;,&quot;B\u1ea1n \u0111\u00e3 b\u1ecf th\u00edch s\u1ea3n ph\u1ea9m n\u00e0y&quot;,&quot;B\u1ea1n c\u1ea7n nh\u1eadp th\u00f4ng tin chi\u1ec1u cao&quot;,&quot;B\u1ea1n c\u1ea7n nh\u1eadp th\u00f4ng tin c\u00e2n n\u1eb7ng&quot;,&quot;B\u1ea1n ch\u1ec9 \u0111\u01b0\u1ee3c nh\u1eadp s\u1ed1&quot;,&quot;B\u1ea1n vui l\u00f2ng chon m\u00e0u s\u1ea3n ph\u1ea7m&quot;,&quot;B\u1ea1n vui l\u00f2ng ch\u1ecdn size&quot;,&quot;B\u1ea1n vui l\u00f2ng chon s\u1ed1 l\u01b0\u1ee3ng > 0&quot;,&quot;S\u1ed1 l\u01b0\u1ee3ng b\u1ea1n mua \u0111ang l\u1edbn h\u01a1n s\u1ed1 l\u01b0\u1ee3ng cho ph\u00e9p&quot;]">
+
+            <div class="demo">
+
+            </div>
+
+            <div class="c-box_product">
+                <div>
+                    <nav class=" location-page" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" class="breadcrumb-item">
+                                <a itemprop="url" title="Trang chủ" rel="nofollow" href="https://sixdo.vn/">Trang
+                                    chủ</a>
+                            </li>
+                            <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" class="breadcrumb-item">
+                                <a itemprop="url" href="https://sixdo.vn/uu-dai-p42" title="SALE 70%">SALE 70%</a>
+                            </li>
+                            <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" class="breadcrumb-item">
+                                <a itemprop="url" href="https://sixdo.vn/ao-nu-p42" title="Áo nữ">Áo nữ</a>
+                            </li>
+                            <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" class="breadcrumb-item">
+                                <a itemprop="url" title="Silk Top 9">Silk Top 9</a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+                <div>
+                    <input type="hidden" value="sản phẩm được thêm vào giỏ hàng" id="alert_addcart">
+                    <input type="hidden" value="https://sixdo.vn/" id="url_root">
+                    <input type="hidden" value="2" id="total_color">
+
+                    <div class="row c-row_head">
+                        <h1 class="hide">
+                            Silk Top 9 </h1>
+                        <!--            -->
+
+                        <div class="col-md-6 img-product my-gallery" id="col-img">
+                            <div class="c-box_all--images ">
+                                <div id="lightSlider0" class="dddd lightSlider lSFade lsGrab"
+                                            style="height: 750px; padding-bottom: 100%;">
+                                            <div class="c-item img-watch160 lslide active"
+                                                data-thumb="https://sixdo.vn/images/products/2023/small/_1697598313_VQV4062 copy_1.jpg">
+                                                <a id="Zoomer" class="MagicZoomPlus"
+                                                    href="../images/products/2023/original/_1697598313_VQV4062 copy_1.jpg"
+                                                    data-thumb="https://sixdo.vn/images/products/2023/small/_1697598313_VQV4062 copy_1.jpg"
+                                                    itemprop="contentUrl"
+                                                    data-options="zoomPosition: inner; zoomWidth:450px; zoomHeight:450px; rightClick: true;hint: on;zoomCaption: off;expand: true;">
+                                                    <figure class="mz-figure mz-hover-zoom mz-inner-zoom mz-ready"><img
+                                                            class="img-fluid"
+                                                            src="../images/products/2023/large/_1697598313_VQV4062 copy_1.jpg"
+                                                            alt="Image description"
+                                                            >
+                                                        <div class="mz-lens"
+                                                            >
+                                                            <img src="https://sixdo.vn/images/products/2023/large/_1697598313_VQV4062%20copy_1.jpg"
+                                                                >
+                                                        </div>
+                                                        <div class="mz-loading"></div>
+                                                        <div class="mz-hint"><span class="mz-hint-message">Hover to
+                                                                zoom</span></div>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="c-item img-watch160 lslide"
+                                                data-thumb="https://sixdo.vn/images/products/2023/small/_1697598316_VQV4037 copy_1.jpg">
+                                                <a id="Zoomer" class="MagicZoomPlus"
+                                                    href="../images/products/2023/original/_1697598316_VQV4037 copy_1.jpg"
+                                                    data-thumb="https://sixdo.vn/images/products/2023/small/_1697598316_VQV4037 copy_1.jpg"
+                                                    itemprop="contentUrl"
+                                                    data-options="zoomPosition: inner; zoomWidth:450px; zoomHeight:450px; rightClick: true;hint: on;zoomCaption: off;expand: true;">
+                                                    <figure class="mz-figure mz-hover-zoom mz-inner-zoom mz-ready"><img
+                                                            class="img-fluid"
+                                                            src="../images/products/2023/large/_1697598316_VQV4037 copy_1.jpg"
+                                                            alt="Image description"
+                                                            style="max-width: 500px; max-height: 750px;">
+                                                        <div class="mz-lens"
+                                                            style="top: 0px; transform: translate(-10000px, -10000px); width: 0px; height: 0px;">
+                                                            <img src="https://sixdo.vn/images/products/2023/large/_1697598316_VQV4037%20copy_1.jpg"
+                                                                style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px;">
+                                                        </div>
+                                                        <div class="mz-loading"></div>
+                                                        <div class="mz-hint"><span class="mz-hint-message">Hover to
+                                                                zoom</span></div>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="c-item img-watch160 lslide"
+                                                data-thumb="https://sixdo.vn/images/products/2023/small/_1697598318_VQV4061 copy_1.jpg">
+                                                <a id="Zoomer" class="MagicZoomPlus"
+                                                    href="../images/products/2023/original/_1697598318_VQV4061 copy_1.jpg"
+                                                    data-thumb="https://sixdo.vn/images/products/2023/small/_1697598318_VQV4061 copy_1.jpg"
+                                                    itemprop="contentUrl"
+                                                    data-options="zoomPosition: inner; zoomWidth:450px; zoomHeight:450px; rightClick: true;hint: on;zoomCaption: off;expand: true;">
+                                                    <figure class="mz-figure mz-hover-zoom mz-inner-zoom mz-ready"><img
+                                                            class="img-fluid"
+                                                            src="../images/products/2023/large/_1697598318_VQV4061 copy_1.jpg"
+                                                            alt="Image description"
+                                                            style="max-width: 500px; max-height: 750px;">
+                                                        <div class="mz-lens"
+                                                            style="top: 0px; transform: translate(-10000px, -10000px); width: 0px; height: 0px;">
+                                                            <img src="https://sixdo.vn/images/products/2023/large/_1697598318_VQV4061%20copy_1.jpg"
+                                                                style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px;">
+                                                        </div>
+                                                        <div class="mz-loading"></div>
+                                                        <div class="mz-hint"><span class="mz-hint-message">Hover to
+                                                                zoom</span></div>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="c-item img-watch160 lslide"
+                                                data-thumb="https://sixdo.vn/images/products/2023/small/_1697598319_VQV4046 copy_1.jpg">
+                                                <a id="Zoomer" class="MagicZoomPlus"
+                                                    href="../images/products/2023/original/_1697598319_VQV4046 copy_1.jpg"
+                                                    data-thumb="https://sixdo.vn/images/products/2023/small/_1697598319_VQV4046 copy_1.jpg"
+                                                    itemprop="contentUrl"
+                                                    data-options="zoomPosition: inner; zoomWidth:450px; zoomHeight:450px; rightClick: true;hint: on;zoomCaption: off;expand: true;">
+                                                    <figure class="mz-figure mz-hover-zoom mz-inner-zoom mz-ready"><img
+                                                            class="img-fluid"
+                                                            src="../images/products/2023/large/_1697598319_VQV4046 copy_1.jpg"
+                                                            alt="Image description"
+                                                            style="max-width: 500px; max-height: 750px;">
+                                                        <div class="mz-lens"
+                                                            style="top: 0px; transform: translate(-10000px, -10000px); width: 0px; height: 0px;">
+                                                            <img src="https://sixdo.vn/images/products/2023/large/_1697598319_VQV4046%20copy_1.jpg"
+                                                                style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px;">
+                                                        </div>
+                                                        <div class="mz-loading"></div>
+                                                        <div class="mz-hint"><span class="mz-hint-message">Hover to
+                                                                zoom</span></div>
+                                                    </figure>
+                                                </a>
+                                            </div>
+
+
+                                        </div>
+                                <!-- <ul id="imageGallery">
+                                    <li data-thumb="../images/products/2023/small/_1697598311_VQV4068 copy_1.jpg"
+                                        data-src="../images/products/2023/large/_1697598311_VQV4068 copy_1.jpg">
+                                        <img src="../images/products/2023/large/_1697598311_VQV4068 copy_1.jpg" />
+                                    </li>
+                                    <li data-thumb="../images/products/2023/small/_1697598311_VQV4068 copy_1.jpg"
+                                        data-src="../images/products/2023/large/_1697598311_VQV4068 copy_1.jpg">
+                                        <img src="../images/products/2023/large/_1697598311_VQV4068 copy_1.jpg" />
+                                    </li>
+                                </ul> -->
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 body-product">
+                            <div id="body_fix_add_cart">
+                                <div class="content_pro">
+                                    <h2 class="c-title_module">
+                                        Silk Top 9 </h2>
+                                    <p class="c-code">MSP:
+                                        E8230805301TS1064 </p>
+                                    <p class="price price-product">
+                                        <span data-price="499000" id="price-no-discount" class="price-no-discount  ">
+                                            499.000đ </span>
+                                        <span class="price_old">
+                                            <del>
+                                                1.296.000đ </del>
+                                        </span>
+                                    </p>
+                                    <p class="color c-show_color--name">
+                                        Color :
+                                        <span>Be vàng nhạt</span>
+                                    </p>
+                                    <ul class="list_color" id="extend_colorProduct">
+
+                                        <li class="c-item">
+                                            <input type="radio" name="selection_color" id="selection_color-160"
+                                                class="hide" value="160" checked="">
+                                            <label for="selection_color-160" class="c-item_color"
+                                                data-watch="img-watch160" data-show="lightSlider0" d-color="160"
+                                                d-name="Đỏ cam">
+                                                <span class="c-color" style="background: #FE5900;  "></span>
+                                            </label>
+                                        </li>
+                                        <li class="c-item">
+                                            <input type="radio" name="selection_color" id="selection_color-185"
+                                                class="hide" value="185">
+                                            <label for="selection_color-185" class="c-item_color active"
+                                                data-watch="img-watch185" data-show="lightSlider1" d-color="185"
+                                                d-name="Be vàng nhạt">
+                                                <span class="c-color" style="background: #FBF5FB;  "></span>
+                                            </label>
+                                        </li>
+
+                                    </ul>
+                                    <p class="size" id="c-show_size--name">
+                                        size :
+                                        <span></span>
+                                    </p>
+
+                                    <div class="items-option input_size ">
+                                        <div class="  c-item_choose--first  c-item_choose--size item-radio-choose c-item_choose160"
+                                            style="display: none;">
+                                            <a href="javascript:void(0)" class="c-name_size--choose c-size_1160 "
+                                                data-v="1" data-name="S" data-stock="1" dt-mx="33">
+                                                <span class="">
+                                                    S </span>
+                                            </a>
+                                            <a href="javascript:void(0)" class="c-name_size--choose c-size_2160 "
+                                                data-v="2" data-name="M" data-stock="1" dt-mx="47">
+                                                <span class="">
+                                                    M </span>
+                                            </a>
+                                            <a href="javascript:void(0)" class="c-name_size--choose c-size_3160 "
+                                                data-v="3" data-name="L" data-stock="1" dt-mx="48">
+                                                <span class="">
+                                                    L </span>
+                                            </a>
+                                            <a href="javascript:void(0)"
+                                                class="c-name_size--choose c-size_4160 last-size" data-v="4"
+                                                data-name="XL" data-stock="1" dt-mx="18">
+                                                <span class="">
+                                                    XL </span>
+                                            </a>
+                                        </div>
+                                        <div class="  c-item_choose--second  c-item_choose--size item-radio-choose c-item_choose185"
+                                            style="display: flex;">
+                                            <a href="javascript:void(0)" class="c-name_size--choose c-size_1185 "
+                                                data-v="1" data-name="S" data-stock="1" dt-mx="30">
+                                                <span class="">
+                                                    S </span>
+                                            </a>
+                                            <a href="javascript:void(0)" class="c-name_size--choose c-size_2185 "
+                                                data-v="2" data-name="M" data-stock="1" dt-mx="30">
+                                                <span class="">
+                                                    M </span>
+                                            </a>
+                                            <a href="javascript:void(0)" class="c-name_size--choose c-size_3185 "
+                                                data-v="3" data-name="L" data-stock="1" dt-mx="30">
+                                                <span class="">
+                                                    L </span>
+                                            </a>
+                                            <a href="javascript:void(0)"
+                                                class="c-name_size--choose c-size_4185 last-size" data-v="4"
+                                                data-name="XL" data-stock="1" dt-mx="19">
+                                                <span class="">
+                                                    XL </span>
+                                            </a>
+                                        </div>
+                                        <div class="hide items-center c-item_choose--size item-radio-choose"
+                                            style="display: none;">
+                                            <a href="javascript:void(0)" class="c-name_size--choose c-size_1 "
+                                                data-v="1" data-name="S" data-stock="1">
+                                                <span class="">
+                                                    S </span>
+                                            </a>
+                                            <a href="javascript:void(0)" class="c-name_size--choose c-size_2 "
+                                                data-v="2" data-name="M" data-stock="1">
+                                                <span class="">
+                                                    M </span>
+                                            </a>
+                                            <a href="javascript:void(0)" class="c-name_size--choose c-size_3 "
+                                                data-v="3" data-name="L" data-stock="1">
+                                                <span class="">
+                                                    L </span>
+                                            </a>
+                                            <a href="javascript:void(0)" class="c-name_size--choose c-size_4 last-size"
+                                                data-v="4" data-name="XL" data-stock="1">
+                                                <span class="">
+                                                    XL </span>
+                                            </a>
+                                        </div>
+
+                                        <a href="javascript:void(0)" class="c-btn_call--findsize" data-toggle="modal"
+                                            data-target="#modalFindSize" title="Tìm đúng kích thước">
+                                            Tìm đúng kích thước <span>→</span>
+                                        </a>
+                                        <div class="items-center item-radio-choose hide">
+                                            <!--                                    <select name="extend_size" id="extend_size" class="extend_size">-->
+                                            <!--                                        <option value="">-->
+                                            <!--</option>-->
+                                            <!--                                        -->
+                                            <!--                                            <option value="--><!--">-->
+                                            <!--</option>-->
+                                            <!--                                        -->
+                                            <!--                                    </select>-->
+                                            <input type="hidden" id="extend_size" name="extend_size" value="">
+                                        </div>
+                                    </div>
+                                    <div></div>
+
+                                    <div class="buy">
+                                        <div class="toggle-quantity">
+                                            <button id="decrement"><i class="fa fa-minus"></i></button>
+                                            <input id="quantity" type="text" value="1" disabled="">
+                                            <button id="increment"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                        <a data-id="5659" class="c-btn btn-add_cart add-cart detail-add-cart "
+                                            title="Thêm vào giỏ hàng" href="javascript:void (0)">
+                                            Thêm vào giỏ hàng </a>
+
+                                        <a href="javascript:void(0)" title="Yêu thích"
+                                            class="c-btn c-btn_heart pull-right " onclick="save_post(5659)">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <i class="fa-solid fa-heart"></i>
+                                            <!-- <i class="fa fa-heart"></i> -->
+                                        </a>
+
+                                    </div>
+                                    <div class="c-box_detail">
+                                        <a href="#description" data-toggle="collapse" class="c-call_detail--box"
+                                            title="Chi tiết">
+                                            Chi tiết <i class="fa fa-minus"></i>
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div id="description" class="collapse c-content_detail in">
+                                            <p>MÔ TẢ SẢN PHẨM</p>
+
+                                            <p>* Sản phẩm : Áo Ngắn Tay<br>
+                                                * Chất liệu : Vải Lụa<br>
+                                                * Hoạ tiết : Không hoạ tiết</p>
+
+                                            <p>⚠️LƯU Ý</p>
+
+                                            <p>- Bảng size trên là bảng size chung mang tính chất&nbsp;tham khảo, tùy
+                                                thuộc vào số đo cơ thể, form&nbsp;sản phẩm và chất liệu vải khác nhau sẽ
+                                                có sự chênh lệch nhất định từ 1-2cm hoặc hơn.<br>
+                                                - Màu sắc sản phẩm có thể sẽ chênh lệch thực tế&nbsp;một phần nhỏ, do
+                                                ảnh hưởng về độ lệch màu của&nbsp;ánh sáng nhưng vẫn đảm bảo chất lượng.
+                                            </p>
+
+                                            <p>CHÍNH SÁCH ĐỔI TRẢ<br>
+                                                -&nbsp;SIXDO&nbsp;hỗ trợ đổi hàng trong vòng 06 ngày kể từ&nbsp;ngày
+                                                nhận hàng đối với sản phẩm lỗi<br>
+                                                - Quý khách mua hàng online vui lòng quay lại video quá trình mở sản
+                                                phẩm để SIXDO có thể hỗ trợ quý khách&nbsp;nếu gặp vấn đề về đơn
+                                                hàng.<br>
+                                                -&nbsp;SIXDO&nbsp;không hỗ trợ đổi size đổi mẫu với các&nbsp;sản phẩm
+                                                sale từ 50%.<br>
+                                                - Liên hệ trực tiếp với&nbsp;SIXDO&nbsp;để được hỗ trợ tư vấn trong bất
+                                                cứ quá trình mua hàng, thanh toán và giao hàng.<br>
+                                                Hotline: 1800 66 50<br>
+                                                &nbsp;</p>
+                                        </div>
+                                    </div>
+                                    <div class="c-box_detail">
+                                        <a href="#care_instration" data-toggle="collapse"
+                                            class="c-call_detail--box collapsed" title="Hướng dẫn bảo quản">
+                                            Hướng dẫn bảo quản <i class="fa fa-minus"></i>
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div id="care_instration" class="collapse c-content_detail">
+                                            <p>"Silk- Lụa + Chiffon + Tơ + Voan :<br>
+                                                •&nbsp;&nbsp; &nbsp;Hạn chế sử dụng chất tẩy trong quá trình vệ
+                                                sinh.<br>
+                                                •&nbsp;&nbsp; &nbsp;Thay vì ngâm vải, hãy giặt trang phục ngay bước đầu
+                                                tiên.<br>
+                                                •&nbsp;&nbsp; &nbsp;Không giặt vải bằng nước nóng. Nhiệt độ lý tưởng của
+                                                nước là 40 độ F tương ứng 4.5 độ C.<br>
+                                                •&nbsp;&nbsp; &nbsp;Vải mỏng nên chỉ được bóp nhẹ và phơi khô tự nhiên.
+                                                Để đẩy nhanh quá trình, có thể sử dụng máy sấy, quạt điện hoặc điều hòa
+                                                ở chế độ nhẹ.&nbsp;<br>
+                                                •&nbsp;&nbsp; &nbsp;Nếu chọn giặt máy, trang phục cần được lộn trái để
+                                                tránh ảnh hưởng tới mặt ngoài. Có thể sử dụng túi giặt chuyên dụng giảm
+                                                thiểu tối đa tác động của buồng xoay tới vải.<br>
+                                                •&nbsp;&nbsp; &nbsp;Sử dụng dấm chua hoặc baking soda để tẩy chất bẩn
+                                                bám trên trang phục.<br>
+                                                •&nbsp;&nbsp; &nbsp;Cuộn vải chiffon vào khăn khô để ép nước ra thay vì
+                                                vắt bằng tay.<br>
+                                                •&nbsp;&nbsp; &nbsp;Chọn nơi khô thoáng, sạch sẽ để phơi vải&nbsp;<br>
+                                                •&nbsp;&nbsp; &nbsp;Không phơi trang phục dưới ánh nắng mặt trời gay
+                                                gắt.<br>
+                                                •&nbsp;&nbsp; &nbsp;Giữ mặt vải luôn phẳng trong quá trình phơi để giữ
+                                                được form dáng cho quần áo.<br>
+                                                •&nbsp;&nbsp; &nbsp;Không để vải ở gần vật sắc nhọn, tránh tình trạng
+                                                vướng, mắc làm hỏng vải."<br>
+                                                &nbsp;</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="contact_pro">
+                                        <a href="tel:18006650" title="Hotline">
+                                            <i class="fa fa-phone"></i> Hotline
+                                        </a>
+                                        <a href="https://www.facebook.com/messages/t/107198024283962"
+                                            title=" Chat online " target="_blank">
+                                            <i class="fa fa-comments"></i> Chat online </a>
+                                        <a href="#" title="Chia sẻ"><i class=" fa fa-share-alt"></i> Chia sẻ </a>
+                                    </div>
+                                </div>
+
+                                <div class="hide">
+
+                                    <form action="#" method="post" class="form-add-cart" id="form-add-cart">
+
+
+                                        <hr class="hidden-xs">
+
+                                        <div class="form-group view-guide hidden-xs">
+                                            <a class="c-btn c-btn_modal--size btn-click_ btn-click-11"
+                                                data-toggle="modal" data-target="#modalFindSize">
+                                                Tìm kích thước phù hợp </a>
+                                        </div>
+
+                                        <div class="detail-task clearfix hidden-xs">
+                                            <a data-id="5659" class="c-btn btn-add_cart add-cart detail-add-cart"
+                                                title="Thêm vào giỏ hàng">
+                                                Thêm vào giỏ hàng </a>
+                                        </div>
+                                    </form>
+
+                                </div>
+
+                                <div class="c-mbox--add_cart hidden-lg hidden-md hidden-sm hide">
+                                    <div class="c-m--add_cart">
+                                        <div class="c-head">
+                                            <h2 class="c-title_module">Silk Top 9</h2>
+                                            <div class="c-m--product-price" id="m--product-price">
+                                                <span class="is-regular">1.296.000 VND </span>
+                                            </div>
+                                        </div>
+                                        <div class="c-m--box_task">
+                                            <a class="c-btn c-btn_modal--size btn-click_ btn-click-11"
+                                                data-toggle="modal" data-target="#modalFindSize">
+                                                Tìm size phù hợp </a>
+
+                                            <a data-id="5659" class="c-btn btn-add_cart add-cart detail-add-cart"
+                                                title="Thêm vào giỏ hàng" href="javascript:void(0)">
+                                                Thêm vào giỏ hàng </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-modal_size modal fade in" id="modalFindSize" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-backdrop fade in" style="height: 1906px;"></div>
+                    <div class="modal-dialog modal-xl modal-dialog-centered fade in" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class=" c-row_calculator">
+                                    <button type="button" class="close" data-dismiss="modal">×</button>
+                                    <!--                            --> <img
+                                        src="../images/products/size/so-mi-nu_1697605231.jpg" alt="kích thước sản phẩm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- List product same -->
+                <div class="list-product-same" id="list-product-same">
+                    <div class="header-product">
+                        <h2 class="c-title">Có thể bạn cũng thích </h2>
+                    </div>
+
+                    <div class="row c-box_list">
+                        <div
+                            class="swiper-container c-swipper-relate swiper-container-initialized swiper-container-horizontal">
+                            <div class="swiper-wrapper" id="swiper-wrapper-8f96215fa3a47857" aria-live="polite"
+                                style="transition: all 0ms ease 0s; transform: translate3d(-2209px, 0px, 0px);">
+                                <div class="c-item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="6"
+                                    role="group" aria-label="1 / 18" style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/silk-top-6-pd5456" title="Silk Top 6" class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2023/large/vnq08487-copy-1694146268.jpg"
+                                            alt="Silk Top 6" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/silk-top-6-pd5456" title="Silk Top 6" class="name">
+                                            Silk Top 6 </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.296.000 VND </p>
+                                </div>
+                                <div class="c-item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="7"
+                                    role="group" aria-label="2 / 18" style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/grey-woven-top-pd5319" title="Grey Woven Top (Áo nữ)"
+                                        class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2023/large/_vqv8924-copy-1691050634.jpg"
+                                            alt="Grey Woven Top (Áo nữ)" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/grey-woven-top-pd5319" title="Grey Woven Top (Áo nữ)"
+                                            class="name">
+                                            Grey Woven Top (Áo nữ) </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.096.000 VND </p>
+                                </div>
+                                <div class="c-item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="8"
+                                    role="group" aria-label="3 / 18" style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/sky-sleeveless-raw-top-pd4087"
+                                        title="Sky Sleeveless Raw Top (Áo nữ)" class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2022/large/sbt_5005-1666407295.jpg"
+                                            alt="Sky Sleeveless Raw Top (Áo nữ)" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/sky-sleeveless-raw-top-pd4087"
+                                            title="Sky Sleeveless Raw Top (Áo nữ)" class="name">
+                                            Sky Sleeveless Raw Top (Áo nữ) </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.272.000 VND </p>
+                                </div>
+                                <div class="c-item swiper-slide swiper-slide-duplicate swiper-slide-prev"
+                                    data-swiper-slide-index="9" role="group" aria-label="4 / 18"
+                                    style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/white-butterfly-bowtie-top-pd4486"
+                                        title="White Butterfly Bowtie Top (Áo nữ)" class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2023/large/vnq07883-1685001493.jpg"
+                                            alt="White Butterfly Bowtie Top (Áo nữ)" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/white-butterfly-bowtie-top-pd4486"
+                                            title="White Butterfly Bowtie Top (Áo nữ)" class="name">
+                                            White Butterfly Bowtie Top (Áo nữ) </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.174.000 VND </p>
+                                </div>
+                                <!--                        <div class="col-lg-3 col-md-6 col-xs-6 c-item">-->
+                                <div class="c-item swiper-slide swiper-slide-active" data-swiper-slide-index="0"
+                                    role="group" aria-label="5 / 18" style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/z-green-nuggets-ascot-collar-top-pd5016"
+                                        title="Z-Green Nuggets Ascot Collar Top (Áo nữ)" class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2023/large/vnq01101-1683981695.jpg"
+                                            alt="Z-Green Nuggets Ascot Collar Top (Áo nữ)" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/z-green-nuggets-ascot-collar-top-pd5016"
+                                            title="Z-Green Nuggets Ascot Collar Top (Áo nữ)" class="name">
+                                            Z-Green Nuggets Ascot Collar Top (Áo nữ) </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.076.000 VND </p>
+                                </div>
+
+                                <!--                        <div class="col-lg-3 col-md-6 col-xs-6 c-item">-->
+                                <div class="c-item swiper-slide swiper-slide-next" data-swiper-slide-index="1"
+                                    role="group" aria-label="6 / 18" style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/floral-voile-top-pd5077" title="Floral Voile Top (Áo nữ)"
+                                        class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2023/large/vqv02848-1689731635.jpg"
+                                            alt="Floral Voile Top (Áo nữ)" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/floral-voile-top-pd5077"
+                                            title="Floral Voile Top (Áo nữ)" class="name">
+                                            Floral Voile Top (Áo nữ) </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.076.000 VND </p>
+                                </div>
+
+                                <!--                        <div class="col-lg-3 col-md-6 col-xs-6 c-item">-->
+                                <div class="c-item swiper-slide" data-swiper-slide-index="2" role="group"
+                                    aria-label="7 / 18" style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/light-yellow-short-sleeves-silk-top-pd4673"
+                                        title="Light Yellow Short Sleeves Silk Top (Áo nữ)" class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2023/large/vnq05289-1679019937.jpg"
+                                            alt="Light Yellow Short Sleeves Silk Top (Áo nữ)" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/light-yellow-short-sleeves-silk-top-pd4673"
+                                            title="Light Yellow Short Sleeves Silk Top (Áo nữ)" class="name">
+                                            Light Yellow Short Sleeves Silk Top (Áo nữ) </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.076.000 VND </p>
+                                </div>
+
+                                <!--                        <div class="col-lg-3 col-md-6 col-xs-6 c-item">-->
+                                <div class="c-item swiper-slide" data-swiper-slide-index="3" role="group"
+                                    aria-label="8 / 18" style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/white-bishop-sleeves-shirt-pd4433"
+                                        title="White Bishop Sleeves Shirt (Áo nữ)" class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2023/large/vnq07536-copy-1696664460.jpg"
+                                            alt="White Bishop Sleeves Shirt (Áo nữ)" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/white-bishop-sleeves-shirt-pd4433"
+                                            title="White Bishop Sleeves Shirt (Áo nữ)" class="name">
+                                            White Bishop Sleeves Shirt (Áo nữ) </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.272.000 VND </p>
+                                </div>
+
+                                <div class="clearfix"></div>
+                                <!--                        <div class="col-lg-3 col-md-6 col-xs-6 c-item">-->
+                                <div class="c-item swiper-slide" data-swiper-slide-index="4" role="group"
+                                    aria-label="10 / 18" style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/pink-bowtie-top-pd5165" title="Pink Bowtie Top (Áo nữ)"
+                                        class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2023/large/vnq07434-copy-1687442659.jpg"
+                                            alt="Pink Bowtie Top (Áo nữ)" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/pink-bowtie-top-pd5165"
+                                            title="Pink Bowtie Top (Áo nữ)" class="name">
+                                            Pink Bowtie Top (Áo nữ) </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.174.000 VND </p>
+                                </div>
+
+                                <!--                        <div class="col-lg-3 col-md-6 col-xs-6 c-item">-->
+                                <div class="c-item swiper-slide" data-swiper-slide-index="5" role="group"
+                                    aria-label="11 / 18" style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/bowtie-top-pd4478" title="Bowtie Top 1 (Áo nữ)"
+                                        class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2023/large/vqv03357-1687426387.jpg"
+                                            alt="Bowtie Top 1 (Áo nữ)" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/bowtie-top-pd4478" title="Bowtie Top 1 (Áo nữ)"
+                                            class="name">
+                                            Bowtie Top 1 (Áo nữ) </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.076.000 VND </p>
+                                </div>
+
+                                <!--                        <div class="col-lg-3 col-md-6 col-xs-6 c-item">-->
+                                <div class="c-item swiper-slide" data-swiper-slide-index="6" role="group"
+                                    aria-label="12 / 18" style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/silk-top-6-pd5456" title="Silk Top 6" class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2023/large/vnq08487-copy-1694146268.jpg"
+                                            alt="Silk Top 6" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/silk-top-6-pd5456" title="Silk Top 6" class="name">
+                                            Silk Top 6 </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.296.000 VND </p>
+                                </div>
+
+                                <!--                        <div class="col-lg-3 col-md-6 col-xs-6 c-item">-->
+                                <div class="c-item swiper-slide" data-swiper-slide-index="7" role="group"
+                                    aria-label="13 / 18" style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/grey-woven-top-pd5319" title="Grey Woven Top (Áo nữ)"
+                                        class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2023/large/_vqv8924-copy-1691050634.jpg"
+                                            alt="Grey Woven Top (Áo nữ)" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/grey-woven-top-pd5319" title="Grey Woven Top (Áo nữ)"
+                                            class="name">
+                                            Grey Woven Top (Áo nữ) </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.096.000 VND </p>
+                                </div>
+
+                                <div class="clearfix"></div>
+                                <!--                        <div class="col-lg-3 col-md-6 col-xs-6 c-item">-->
+                                <div class="c-item swiper-slide" data-swiper-slide-index="8" role="group"
+                                    aria-label="15 / 18" style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/sky-sleeveless-raw-top-pd4087"
+                                        title="Sky Sleeveless Raw Top (Áo nữ)" class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2022/large/sbt_5005-1666407295.jpg"
+                                            alt="Sky Sleeveless Raw Top (Áo nữ)" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/sky-sleeveless-raw-top-pd4087"
+                                            title="Sky Sleeveless Raw Top (Áo nữ)" class="name">
+                                            Sky Sleeveless Raw Top (Áo nữ) </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.272.000 VND </p>
+                                </div>
+
+                                <!--                        <div class="col-lg-3 col-md-6 col-xs-6 c-item">-->
+                                <div class="c-item swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="9"
+                                    role="group" aria-label="16 / 18" style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/white-butterfly-bowtie-top-pd4486"
+                                        title="White Butterfly Bowtie Top (Áo nữ)" class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2023/large/vnq07883-1685001493.jpg"
+                                            alt="White Butterfly Bowtie Top (Áo nữ)" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/white-butterfly-bowtie-top-pd4486"
+                                            title="White Butterfly Bowtie Top (Áo nữ)" class="name">
+                                            White Butterfly Bowtie Top (Áo nữ) </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.174.000 VND </p>
+                                </div>
+
+
+                                <div class="c-item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                    data-swiper-slide-index="0" role="group" aria-label="17 / 18"
+                                    style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/z-green-nuggets-ascot-collar-top-pd5016"
+                                        title="Z-Green Nuggets Ascot Collar Top (Áo nữ)" class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2023/large/vnq01101-1683981695.jpg"
+                                            alt="Z-Green Nuggets Ascot Collar Top (Áo nữ)" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/z-green-nuggets-ascot-collar-top-pd5016"
+                                            title="Z-Green Nuggets Ascot Collar Top (Áo nữ)" class="name">
+                                            Z-Green Nuggets Ascot Collar Top (Áo nữ) </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.076.000 VND </p>
+                                </div>
+                                <div class="c-item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                                    data-swiper-slide-index="1" role="group" aria-label="18 / 18"
+                                    style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/floral-voile-top-pd5077" title="Floral Voile Top (Áo nữ)"
+                                        class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2023/large/vqv02848-1689731635.jpg"
+                                            alt="Floral Voile Top (Áo nữ)" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/floral-voile-top-pd5077"
+                                            title="Floral Voile Top (Áo nữ)" class="name">
+                                            Floral Voile Top (Áo nữ) </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.076.000 VND </p>
+                                </div>
+                                <div class="c-item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2"
+                                    role="group" aria-label="19 / 18" style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/light-yellow-short-sleeves-silk-top-pd4673"
+                                        title="Light Yellow Short Sleeves Silk Top (Áo nữ)" class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2023/large/vnq05289-1679019937.jpg"
+                                            alt="Light Yellow Short Sleeves Silk Top (Áo nữ)" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/light-yellow-short-sleeves-silk-top-pd4673"
+                                            title="Light Yellow Short Sleeves Silk Top (Áo nữ)" class="name">
+                                            Light Yellow Short Sleeves Silk Top (Áo nữ) </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.076.000 VND </p>
+                                </div>
+                                <div class="c-item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3"
+                                    role="group" aria-label="20 / 18" style="width: 532.25px; margin-right: 20px;">
+                                    <a href="https://sixdo.vn/white-bishop-sleeves-shirt-pd4433"
+                                        title="White Bishop Sleeves Shirt (Áo nữ)" class="c-image">
+                                        <img src="https://sixdo.vn/images/products/2023/large/vnq07536-copy-1696664460.jpg"
+                                            alt="White Bishop Sleeves Shirt (Áo nữ)" class="img-fluid">
+                                    </a>
+                                    <h3 class="c-name">
+                                        <a href="https://sixdo.vn/white-bishop-sleeves-shirt-pd4433"
+                                            title="White Bishop Sleeves Shirt (Áo nữ)" class="name">
+                                            White Bishop Sleeves Shirt (Áo nữ) </a>
+                                    </h3>
+                                    <p class="c-price">
+                                        1.272.000 VND </p>
+                                </div>
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+
+                        <!--            <div class="swiper-pagination"></div>-->
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                            aria-controls="swiper-wrapper-8f96215fa3a47857"></div>
+                        <div class="swiper-button-prev " tabindex="0" role="button" aria-label="Previous slide"
+                            aria-controls="swiper-wrapper-8f96215fa3a47857"></div>
+                    </div>
+
+                </div>
+
+                <!-- List product viewed -->
+                <div class="container-fluid list-product-same list-product-viewed hide">
+                    <div class="header-product">
+                        <h2>Các sản phẩm đã xem</h2>
+                    </div>
+                    <div class="body-product">
+                        <div class="row">
+                            <div class="col-md-3 item-product">
+                                <a href="">
+                                    <div class="img_size">
+                                        <img src="../images/products/2023/large/_vqv4046-copy-1697598339.jpg">
+                                    </div>
+                                    <div class="link-product-detail">
+                                        <h4>Silk Top 9</h4>
+                                        <span>1.296.000 đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 item-product">
+                                <a href="">
+                                    <div class="img_size">
+                                        <img src="../images/products/2023/large/0b2a8961-copy-1697617626.jpg">
+                                    </div>
+                                    <div class="link-product-detail">
+                                        <h4>Cream Polka Dots Midi Chiffon Dress</h4>
+                                        <span>2.896.000 đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 item-product">
+                                <a href="">
+                                    <div class="img_size">
+                                        <img src="../images/products/2023/large/0b2a8887-copy-1697617329.jpg">
+                                    </div>
+                                    <div class="link-product-detail">
+                                        <h4>Green Flower Cap Sleeves Midi Dress</h4>
+                                        <span>2.996.000 đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 item-product">
+                                <a href="">
+                                    <div class="img_size">
+                                        <img src="../images/products/2023/large/0b2a9466-copy-1697601397.jpg">
+                                    </div>
+                                    <div class="link-product-detail">
+                                        <h4>Blue Brown Geomitric Midi Raw Dress</h4>
+                                        <span>2.696.000 đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="pos-bottom row-content">
+            <div class="block_banners banners_0 blocks_banner blocks0 block">
+                <div id="block-24" class="block-intro-config block-banner block-banner-banner_footer"
+                    style="float:none;">
+                    <div class="container-flex">
+                        <div class="item">
+                            <a href="https://sixdo.vn/chinh-sach-doi-tra-n354" target="_blank">
+                                <img src="https://sixdo.vn/images/banners/original/limited-time2x-1624335793.png"
+                                    alt="Đổi trả sản phẩm" class="img-responsive">
+                                <div>
+                                    <p><strong>6 NGÀY ĐỔI SẢN PHẨM</strong></p>
+
+                                    <p>Đổi trả sản phẩm trong 6 ngày</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://sixdo.vn/lien-he" target="_blank">
+                                <img src="https://sixdo.vn/images/banners/original/group-242x-1624335840.png"
+                                    alt="Hotline" class="img-responsive">
+                                <div>
+                                    <p><strong>Hotline 1800 6650</strong></p>
+
+                                    <p>8h00 - 21h00, T2 - CN nghỉ Tết Âm lịch</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://sixdo.vn/he-thong-cua-hang" target="_blank">
+                                <img src="https://sixdo.vn/images/banners/original/group-262x-1624335863.png"
+                                    alt="HỆ THỐNG CỬA HÀNG" class="img-responsive">
+                                <div>
+                                    <p><strong>HỆ THỐNG CỬA HÀNG</strong></p>
+
+                                    <p>60 cửa hàng trên toàn hệ thống</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="" target="_blank">
+                                <img src="https://sixdo.vn/images/banners/original/path-833-1623718758-1624336147.png"
+                                    alt="VẬN CHUYỂN" class="img-responsive">
+                                <div>
+                                    <p><strong>VẬN CHUYỂN</strong></p>
+
+                                    <p>Đồng giá 25K toàn quốc</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div><!--end: #block-24-->
+            </div>
+        </div>
+
+        <footer class="container-fuild c-footer ">
+            <div class="container">
+                <div class="row sitemap">
+                    <div class="col-sm-4 item" style="margin-bottom: 0px">
+                        <div data-toggle="collapse" data-target="#demo" class="c-title menu-bottom-collapse"
+                            style="margin-bottom: 10px;">
+                            <span style="font-family: 't-medium';">SẢN PHẨM</span>
+                            <svg class="chevron-right" style="width: 15px; height: 15px; margin-bottom: 4px"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="c-info collapse" id="demo">
+                            <ul style="margin-top: 10px" id="block-0" class="block-menu block-menu-default  ">
+                                <li class="menu-186 "><a href="./index.html" title="SẢN PHẨM MỚI">SẢN
+                                        PHẨM
+                                        MỚI</a></li>
+                                <li class="menu-187 "><a href="./index.html"
+                                        title="SẢN PHẨM GIẢM GIÁ">SẢN
+                                        PHẨM GIẢM GIÁ</a></li>
+                                <li class="menu-188 "><a href="./index.html" title="PHỤ KIỆN">PHỤ KIỆN</a>
+                                </li>
+                                <li class="menu-189 "><a href="./collections.html" title="BỘ SƯU TẬP">BỘ SƯU
+                                        TẬP</a></li>
+                                <li class="menu-190 "><a href="./fashion.html"
+                                        title="TRÌNH DIỄN THỜI TRANG">TRÌNH DIỄN THỜI TRANG</a></li>
+                            </ul>
+
+                            <style>
+                                @media screen and (max-width: 568px) {
+                                    footer .sitemap .item .c-info.collapsing ul {
+                                        font-family: unset !important;
+                                        padding-left: 10px
+                                    }
+
+                                    footer .sitemap .item .c-info.collapse ul {
+                                        font-family: unset !important;
+                                        padding-left: 10px
+                                    }
+                                }
+                            </style>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 item">
+                        <!-- <p class="c-title"></p> -->
+                        <div class="c-info">
+                            <!--                        -->
+                            <ul style="margin-top: 10px" id="block-0" class="block-menu block-menu-default  ">
+                                <li class="menu-167 "><a href="https://sixdo.vn/chinh-sach-sixdo-n385"
+                                        title="CHÍNH SÁCH MUA SẮM">CHÍNH SÁCH MUA SẮM</a></li>
+                                <li class="menu-50 "><a href="https://sixdo.vn/sixclub-st30" title="SIXCLUB">SIXCLUB</a>
+                                </li>
+                                <li class="menu-149 "><a href="https://sixdo.vn/cau-chuyen-thuong-hieu-st31"
+                                        title="CÂU CHUYỆN THƯƠNG HIỆU">CÂU CHUYỆN THƯƠNG HIỆU</a></li>
+                                <li class="menu-162 "><a href="https://sixdo.vn/he-thong-cua-hang"
+                                        title="HỆ THỐNG CỬA HÀNG">HỆ THỐNG CỬA HÀNG</a></li>
+                                <li class="menu-159 "><a href="https://sixdo.vn/tin-tuc-sixdo-cn96"
+                                        title="THÔNG CÁO BÁO CHÍ">THÔNG CÁO BÁO CHÍ</a></li>
+                                <li class="menu-170 "><a href="https://sixdo.vn/tuyen-dung" title="TUYỂN DỤNG">TUYỂN
+                                        DỤNG</a></li>
+                                <li class="menu-172 "><a href="https://sixdo.vn/lien-he" title="LIÊN HỆ">LIÊN HỆ</a>
+                                </li>
+                            </ul>
+
+                            <style>
+                                @media screen and (max-width: 568px) {
+                                    footer .sitemap .item .c-info.collapsing ul {
+                                        font-family: unset !important;
+                                        padding-left: 10px
+                                    }
+
+                                    footer .sitemap .item .c-info.collapse ul {
+                                        font-family: unset !important;
+                                        padding-left: 10px
+                                    }
+                                }
+                            </style>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 item">
+                        <div class="c-info" style="margin-bottom: 20px">
+                            <a target="_blank" href="" title="Facebook" class="c-social">
+                                <img style="width: 30px;" src="../images/iconSocial/ic-fb.svg" alt="Facebook"
+                                    class="img-responsive">
+                            </a>
+                            <a target="_blank" href="" title="Instagram" class="c-social">
+                                <img style="width: 30px; margin-left: 5px;" src="../images/iconSocial/ic-instagram.svg"
+                                    alt="Instagram" class="img-responsive">
+                            </a>
+                            <a target="_blank" href="" title="Youtube" class="c-social">
+                                <img style="width: 30px; margin-left: 5px;" src="../images/iconSocial/ic-yt.svg"
+                                    alt="Youtube" class="img-responsive">
+                            </a>
+                            <a target="_blank" href="" title="Tiktok" class="c-social">
+                                <img style="width: 30px; margin-left: 5px;" src="../images/iconSocial/ic-tictok.svg"
+                                    alt="Tiktok" class="img-responsive">
+                            </a>
+                            <a target="_blank" href="" title="shopee" class="c-social">
+                                <img style="width: 30px; height: 30px; margin-left: 5px;"
+                                    src="../images/iconSocial/ic-shopee.png" alt="shopee" class="img-responsive">
+                            </a>
+                            <a target="_blank" href="" title="lazada" class="c-social">
+                                <img style="width: 40px; height: 30px; margin-left: 5px;"
+                                    src="../images/iconSocial/ic-lazada.png" alt="lazada" class="img-responsive">
+                            </a>
+                        </div>
+                        <a target="_blank" title="Thông báo bộ công thương"
+                            href="http://online.gov.vn/Home/WebDetails/76361">
+                            <img width="90" src="../images/iconSocial/Thongbaobocongthuong.svg"
+                                alt="Thông báo bộ công thương">
+                        </a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <span>©2023 Sifa</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- Swiper Js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Light Gallery -->
+    <script src="../assets/vendor/lightslider-master/dist/js/lightslider.min.js"></script>
+    <!-- Magic Zoom -->
+    <script src="../assets/vendor/magiczoom-trial/magiczoom/magiczoom.js"></script>
+     <!-- Jquery -->
+     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/home.js"></script>3
+    <script src="../assets/js/template.js"></script>
+    <script src="../assets/css/product/js/lightslider.js"></script>
+    <script src="../assets/css/product/js/slick.min.js"></script>
+    <script src="../assets/css/product/js/product.js"></script>
+    </body>
+
+</html>
