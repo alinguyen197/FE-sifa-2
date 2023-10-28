@@ -67,6 +67,9 @@
     text-transform: uppercase;
     font-family: t-black, sans-serif
 }
+.c-box_products .c-box_head a:hover{
+    color: #212121 !important;
+}
 
 .c-box_products .c-box_head .c-btn_cate {
     align-items: center;
