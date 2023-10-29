@@ -39,29 +39,68 @@
                         </div>
                         <div class="menu_header">
                             <div class="menu_login">
-                                <a href="javascript:void(0)" title="login" id="c-call_account"
-                                    class="c-account hidden-xs hidden-sm" onclick="$('#memLog').trigger('click')">
-                                    <img src="../images/account.png" alt="login" class="img-responsive">
-                                    login </a>
+                                <span class="c-box_account hidden-sm hidden-xs">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" title="Tài khoản">
+                                        <img src="../images/account.png" alt="login" class="img-responsive">
+                                        USER001 </a>
+                                    <ul class="dropdown dropdown-menu">
+                                        <li>
+                                            <a href="" title="Thông tin cá nhân  ">
+                                                Thông tin cá nhân </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a class="logout  " href="">
+                                                Sản phẩm yêu thích </a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Ưu đãi của bạn">
+                                                Ưu đãi của bạn </a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Lịch sử giao dịch">
+                                                Lịch sử giao dịch </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a class="" href="">
+                                                Sổ địa chỉ </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://sixdo.vn/logout?return=L3RhaS1raG9hbi1jdWEtdG9p"
+                                                title="Đăng xuất ">
+                                                Đăng xuất </a>
+                                        </li>
+                                    </ul>
+                                </span>
                                 <div class="c-lang c-item_child search_ c-box_search hidden-sm hidden-xs"
                                     style="text-transform: unset;">
                                     <a href="javacript:void(0)" title="Tìm kiếm" class="c-call_search">
                                         <i class="fa fa-search"></i>
                                         <span class="hidden-sm hidden-xs">Tìm kiếm</span>
                                     </a>
+
                                     <!--  -->
                                     <div class="search-box ">
                                         <form id="form_search" class="form_search" name="form_search" method="post"
-                                            onsubmit="">
+                                            onsubmit="javascript: submit_form_search();return false;">
+
                                             <input class="form-control input_search" type="text" id="keyword"
-                                                name="keyword" value="Gõ từ khóa tìm kiếm">
+                                                name="keyword" value="Gõ từ khóa tìm kiếm"
+                                                onblur="if(this.value=='') this.value='Gõ từ khóa tìm kiếm'"
+                                                onfocus="if(this.value=='Gõ từ khóa tìm kiếm') this.value=''">
+
                                             <a class="bt-search-main" id="bt-search" onclick="submit_form_search();"> <i
                                                     class="fa fa-search"></i></a>
+
                                             <input type="hidden" id="link_search" name="link_search"
                                                 value="https://sixdo.vn/tim-kiem">
+
                                         </form>
                                     </div>
+
+
                                 </div>
+
                                 <a class="c-lang hidden-xs hidden-sm  active" href="https://sixdo.vn" title="VN" 1="">
                                     VN </a>
                                 <a class="c-lang hidden-xs hidden-sm " href="https://sixdo.com" title="EN"
@@ -88,144 +127,26 @@
                                 </a>
 
                                 <div class="c-modal_overlay"></div>
-                                <div class="submenu view-cart-hea c-box_viewCart c-view_prd">
-                                    <a href="" title="close" class="c-close_cart">
+                                <div class="submenu view-cart-hea c-box_viewCart ">
+                                    <a href="javascript:void(0)" title="close" class="c-close_cart">
                                         x
                                     </a>
                                     <div class="c-box_shopping--cart">
-                                        <p><strong>GIỎ HÀNG</strong></p>
-                                        <div class="c-calc_bag">
-                                            <div class="c-list_item">
-                                                <div class="c-box_item clearfix key_item--1">
-                                                    <div class="row c-item ">
-                                                        <div class="title-cart col-md-3 col-sm-4  c-col-image"><a
-                                                                href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
-                                                                title="Dark Purple Floral Raw Vest"><img
-                                                                    src="https://sixdo.vn/images/products/2023/small/0b2a9556-copy-1697601907.jpg"
-                                                                    class="img-responsive">.</a></div>
-                                                        <div class="col-md-9 col-sm-8 c-col-name name-pro">
-                                                            <div class="c-box_name"><a
-                                                                    href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
-                                                                    title="Dark Purple Floral Raw Vest"
-                                                                    class="c-name">Dark Purple Floral Raw Vest</a><a
-                                                                    data-id="5673-176-1-0-0" data-tr="key_item--1"
-                                                                    class="c-del_incart pull-right"
-                                                                    href="javascript:void(0)" title="">x</a></div>
-                                                            <div class="c-sec_option select-color"><label
-                                                                    class="c-label">Màu: </label>Màu tím đậm</div>
-                                                            <div class="c-sec_option select-size"><label
-                                                                    class="c-label">Size: </label>.S</div>
-                                                            <div class="c-sec_option select-box"><label
-                                                                    class="c-label">Số lượng</label><span
-                                                                    class="custom-quantity-input">1</span><span
-                                                                    class="total-pro pull-right">2.496.000 VND</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <hr>
-                                                <div class="c-box_item clearfix key_item--2">
-                                                    <div class="row c-item ">
-                                                        <div class="title-cart col-md-3 col-sm-4  c-col-image"><a
-                                                                href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
-                                                                title="Dark Purple Floral Raw Vest"><img
-                                                                    src="https://sixdo.vn/images/products/2023/small/0b2a9556-copy-1697601907.jpg"
-                                                                    class="img-responsive">.</a></div>
-                                                        <div class="col-md-9 col-sm-8 c-col-name name-pro">
-                                                            <div class="c-box_name"><a
-                                                                    href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
-                                                                    title="Dark Purple Floral Raw Vest"
-                                                                    class="c-name">Dark Purple Floral Raw Vest</a><a
-                                                                    data-id="5673-176-2-0-0" data-tr="key_item--2"
-                                                                    class="c-del_incart pull-right"
-                                                                    href="javascript:void(0)" title="">x</a></div>
-                                                            <div class="c-sec_option select-color"><label
-                                                                    class="c-label">Màu: </label>Màu tím đậm</div>
-                                                            <div class="c-sec_option select-size"><label
-                                                                    class="c-label">Size: </label>.M</div>
-                                                            <div class="c-sec_option select-box"><label
-                                                                    class="c-label">Số lượng</label><span
-                                                                    class="custom-quantity-input">1</span><span
-                                                                    class="total-pro pull-right">2.496.000 VND</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <hr>
-                                                <div class="c-box_item clearfix key_item--3">
-                                                    <div class="row c-item ">
-                                                        <div class="title-cart col-md-3 col-sm-4  c-col-image"><a
-                                                                href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
-                                                                title="Dark Purple Floral Raw Vest"><img
-                                                                    src="https://sixdo.vn/images/products/2023/small/0b2a9556-copy-1697601907.jpg"
-                                                                    class="img-responsive">.</a></div>
-                                                        <div class="col-md-9 col-sm-8 c-col-name name-pro">
-                                                            <div class="c-box_name"><a
-                                                                    href="https://sixdo.vn/dark-purple-floral-raw-vest-pd5673"
-                                                                    title="Dark Purple Floral Raw Vest"
-                                                                    class="c-name">Dark Purple Floral Raw Vest</a><a
-                                                                    data-id="5673-176-3-0-0" data-tr="key_item--3"
-                                                                    class="c-del_incart pull-right"
-                                                                    href="javascript:void(0)" title="">x</a></div>
-                                                            <div class="c-sec_option select-color"><label
-                                                                    class="c-label">Màu: </label>Màu tím đậm</div>
-                                                            <div class="c-sec_option select-size"><label
-                                                                    class="c-label">Size: </label>.L</div>
-                                                            <div class="c-sec_option select-box"><label
-                                                                    class="c-label">Số lượng</label><span
-                                                                    class="custom-quantity-input">1</span><span
-                                                                    class="total-pro pull-right">2.496.000 VND</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <hr>
-                                                <div class="c-box_item clearfix key_item--4">
-                                                    <div class="row c-item ">
-                                                        <div class="title-cart col-md-3 col-sm-4  c-col-image"><a
-                                                                href="https://sixdo.vn/yellow-geomitric-long-sleeves-raw-vest-pd5665"
-                                                                title="Yellow Geomitric Long Sleeves Raw Vest"><img
-                                                                    src="https://sixdo.vn/images/products/2023/small/0b2a9219-copy-1697600673.jpg"
-                                                                    class="img-responsive">.</a></div>
-                                                        <div class="col-md-9 col-sm-8 c-col-name name-pro">
-                                                            <div class="c-box_name"><a
-                                                                    href="https://sixdo.vn/yellow-geomitric-long-sleeves-raw-vest-pd5665"
-                                                                    title="Yellow Geomitric Long Sleeves Raw Vest"
-                                                                    class="c-name">Yellow Geomitric Long Sleeves Raw
-                                                                    Vest</a><a data-id="5665-43-1-0-0"
-                                                                    data-tr="key_item--4"
-                                                                    class="c-del_incart pull-right"
-                                                                    href="javascript:void(0)" title="">x</a></div>
-                                                            <div class="c-sec_option select-color"><label
-                                                                    class="c-label">Màu: </label>Vàng</div>
-                                                            <div class="c-sec_option select-size"><label
-                                                                    class="c-label">Size: </label>.S</div>
-                                                            <div class="c-sec_option select-box"><label
-                                                                    class="c-label">Số lượng</label><span
-                                                                    class="custom-quantity-input">1</span><span
-                                                                    class="total-pro pull-right">2.296.000 VND</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <hr>
-                                            </div>
-                                            <div class="c-list_fee">
-                                                <p class="price_order">Tổng tiền tạm tính<span
-                                                        class="order-value pull-right">9.784.000 VND</span></p>
-                                                <div class="c-total_order"> <span class="c-title"> TỔNG HÓA
-                                                        ĐƠN</span><span class="order-value pull-right">9.784.000
-                                                        VND</span></div>
-                                            </div>
-                                        </div><a class="btn c-btn_dark" href="./booking.html"><strong>Đi tới
-                                                đặt hàng</strong></a>
+                                        <p class="c-note_empty">
+                                            Bạn chưa có sản phẩm nào trong giỏ hàng </p>
                                     </div>
                                 </div>
                                 <script>
-
-                                </script> <a href="https://sixdo.vn/en" title="lang" class="c-mlang hidden-lg hidden-md">
+                                    gtag("event", "add_to_cart", {
+                                        'currency': 'VND',
+                                        'items': [
+                                        ]
+                                    });
+                                </script> <a href="https://sixdo.vn/en" title="lang"
+                                    class="c-mlang hidden-lg hidden-md">
                                     <img src="https://sixdo.vn/images/language_en.png" alt="lang">
                                 </a>
+
                             </div>
 
                             <div id="cssmenu" class="c-main_menu">
@@ -433,28 +354,32 @@
                                 <div class="owl-item">
                                     <div class="item">
                                         <a title="WEB" href="" target="_blank">
-                                            <img src="https://sifafashion.com/public/uploads/images/Hinh-01(Resize)1.jpg" style="height: 880px;" alt="WEB" class="img-responsive">
+                                            <img src="https://sifafashion.com/public/uploads/images/Hinh-01(Resize)1.jpg"
+                                                style="height: 880px;" alt="WEB" class="img-responsive">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="owl-item">
                                     <div class="item">
                                         <a title="Web lớn" href="" target="_blank">
-                                            <img src="https://sifafashion.com/public/uploads/images/042.jpg" style="height: 880px;" alt="Web lớn" class="img-responsive">
+                                            <img src="https://sifafashion.com/public/uploads/images/042.jpg"
+                                                style="height: 880px;" alt="Web lớn" class="img-responsive">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="owl-item">
                                     <div class="item">
                                         <a title="Banner 3" href="" target="_blank">
-                                            <img src="https://sifafashion.com/public/uploads/images/dam_51.jpg" style="height: 880px;" alt="Banner 3" class="img-responsive">
+                                            <img src="https://sifafashion.com/public/uploads/images/dam_51.jpg"
+                                                style="height: 880px;" alt="Banner 3" class="img-responsive">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="owl-item">
                                     <div class="item">
                                         <a title="Banner Home 4" href="" target="_blank">
-                                            <img src="https://sifafashion.com/public/uploads/images/DSC_1557-rs1.jpg" style="height: 880px;"  alt="Banner Home 4" class="img-responsive">
+                                            <img src="https://sifafashion.com/public/uploads/images/DSC_1557-rs1.jpg"
+                                                style="height: 880px;" alt="Banner Home 4" class="img-responsive">
                                         </a>
                                     </div>
                                 </div>
@@ -606,11 +531,11 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="c-item_parent  level_0  " id="pr_36"><a href="" class="item 0"
-                                                title="SALE 70%"> SALE
-                                                70%</a> <span class="show_cat offcanvas-menu-toggler collapsed"
-                                                href="#childMenu_9" data-toggle="collapse"></span>
-                                            <ul id="childMenu_9" class=" c-box_child collapse   ">
+                                        <li class="c-item_parent  level_0  " id="pr_36">
+                                            <a href="" class="item 0" title="Khuyến Mãi">Khuyến Mãi</a>
+                                                 <!-- <span class="show_cat offcanvas-menu-toggler collapsed"
+                                                href="#childMenu_9" data-toggle="collapse"></span> -->
+                                            <!-- <ul id="childMenu_9" class=" c-box_child collapse   ">
                                                 <li class="c-item_child   level_1 child_36">
                                                     <div class="c-sub"> <a href="" class="sub_item 1"
                                                             title="Khuyến Mãi">Khuyến Mãi</a> </div>
@@ -619,7 +544,7 @@
                                                     <div class="c-sub"> <a href="" class="sub_item 1" title=""></a>
                                                     </div>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </li>
                                     </ul>
                                     <!--	end CONTENT -->
@@ -694,14 +619,17 @@
                                                     class="img-fluid img-sec">
                                             </a>
                                             <h3 class="c-name">
-                                                <a href="./productdetail.html" title="Magenta Short Sleeves Mini Woven Dress" class="name">Magenta Short Sleeves Mini Woven Dress </a>
+                                                <a href="./productdetail.html"
+                                                    title="Magenta Short Sleeves Mini Woven Dress" class="name">Magenta
+                                                    Short Sleeves Mini Woven Dress </a>
                                             </h3>
                                             <p class="c-box_color">GA22232</p>
                                             <div class="price">
                                                 <p class="c-price">
                                                     <span class="c-real_price"> 2.496.000đ </span>
                                                 </p>
-                                                <a class="c-btn_like c-like5625" href="" title="Yêu thích" data-id="5625">
+                                                <a class="c-btn_like c-like5625" href="" title="Yêu thích"
+                                                    data-id="5625">
                                                     <i class="fa fa-heart-o"></i>
                                                     <i class="fa fa-heart"></i>
                                                 </a>
@@ -796,14 +724,17 @@
                                                     class="img-fluid img-sec">
                                             </a>
                                             <h3 class="c-name">
-                                                <a href="./productdetail.html" title="Magenta Short Sleeves Mini Woven Dress" class="name">Magenta Short Sleeves Mini Woven Dress </a>
+                                                <a href="./productdetail.html"
+                                                    title="Magenta Short Sleeves Mini Woven Dress" class="name">Magenta
+                                                    Short Sleeves Mini Woven Dress </a>
                                             </h3>
                                             <p class="c-box_color">GA22232</p>
                                             <div class="price">
                                                 <p class="c-price">
                                                     <span class="c-real_price"> 2.496.000đ </span>
                                                 </p>
-                                                <a class="c-btn_like c-like5625" href="" title="Yêu thích" data-id="5625">
+                                                <a class="c-btn_like c-like5625" href="" title="Yêu thích"
+                                                    data-id="5625">
                                                     <i class="fa fa-heart-o"></i>
                                                     <i class="fa fa-heart"></i>
                                                 </a>
@@ -898,14 +829,17 @@
                                                     class="img-fluid img-sec">
                                             </a>
                                             <h3 class="c-name">
-                                                <a href="./productdetail.html" title="Magenta Short Sleeves Mini Woven Dress" class="name">Magenta Short Sleeves Mini Woven Dress </a>
+                                                <a href="./productdetail.html"
+                                                    title="Magenta Short Sleeves Mini Woven Dress" class="name">Magenta
+                                                    Short Sleeves Mini Woven Dress </a>
                                             </h3>
                                             <p class="c-box_color">GA22232</p>
                                             <div class="price">
                                                 <p class="c-price">
                                                     <span class="c-real_price"> 2.496.000đ </span>
                                                 </p>
-                                                <a class="c-btn_like c-like5625" href="" title="Yêu thích" data-id="5625">
+                                                <a class="c-btn_like c-like5625" href="" title="Yêu thích"
+                                                    data-id="5625">
                                                     <i class="fa fa-heart-o"></i>
                                                     <i class="fa fa-heart"></i>
                                                 </a>
@@ -990,7 +924,7 @@
                                             </div>
                                         </div>
                                         <div class="clearfix  hidden-xs hidden-sm"></div>
-                                        
+
                                     </div>
                                     <div class="pagination justify-content-end"><a class="current"
                                             title="Page 1">1</a><a rel="nofollow" class="other-page" title="Page 2"
